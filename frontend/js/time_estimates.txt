@@ -1,0 +1,184 @@
+React JS Time Estimates
+
+Advanced: 
+10 Modules
+60 Lessons
+
+JavaScript Advanced
+Start: 02.02.23 18:48
+Estimate: 5 weeks
+Break: 07.02.23 11:30
+Time before break: 5 days
+Start from break: 14.02.23
+Break: 26.02.23 11:14
+Time before break: 17 Days
+Start from break: 19.03.23 
+Break: 30.03.23
+Time before break: 28 Days
+Start from break: 16.05.23
+End: 12.06.23
+Report Time before: 0
+Actual time: 2 Months
+
+1 Интро Advanced JS
+Start: 02.02.23 18:48
+Estimate: 2:18 Hours
+End: 03.02.23 11:16
+Report Time before: 5:51 Hours
+Actual time: 1:41
+
+1.7 Практическая работа 
+Start: 03.02.23 11:16
+Estimate: 2 Hours
+End: 04.02.23 12:31
+Report Time before: 49 Minutes
+Actual time: 5:14 Hours
+
+2. Модули 
+Start: 04.02.23 12:32
+Estimate: 2:45 Hours
+End: 04.02.23 15:10
+Report Time before: 1:51 Hours
+Actual time: 2:14 Hours
+
+2.5 Практическая работа 
+Start: 04.02.23 15:10
+Estimate: 3:30 Hours
+End: 04.02.23 22:25
+Report Time before: 4:06
+Actual time: 4:52
+
+3. Event loop и асинхронная разработка 
+Start: 05.02.23 10:56
+Estimate: 4:30
+End: 05.02.23 22:00
+Report Time before: 0:00
+Actual time: 2:44
+
+3.7 Практическая работа 
+Start: 06.02.23 11:38
+Estimate: 7:30 Hours
+End: 06.02.23 21:33
+Report Time before: 38 Minutes
+Actual time: 4:05 Hours
+
+JavaScript Практикум
+Start: 07.02.23 11:09
+Estimate: 25:00 Hours
+End: 14.02.23 17:07
+Report Time before: 39 Minutes
+Actual time: 45:48 Hours
+
+Модуль 4. Обработка ошибок 
+Start: 14.02.23 17:13
+Estimate: 4:30 Hours
+End: 14.02.23 20:52
+Report Time before: 04:34 Hours
+Actual time: 2:36 Hours
+
+4.6 Практическая работа 
+Start: 14.02.23 21:00
+Estimate: 15 Hours
+End: 16.02.23 12:07
+Report Time before: 6:36 Hours
+Actual time: 7:41
+
+5. Классы 
+Start: 16.02.23 13:10
+Estimate: 2 Hours
+End: 16.02.23 14:41
+Report Time before: 1:27 Hours
+Actual time: 1:29 Hours
+
+5.6 Практическая работа 
+Start: 16.02.23 14:44
+Estimate: 7:00 Hours
+End: 17.02.23 15:22
+Report Time before: 02:56 Hours
+Actual time: 7:14 Hours
+
+6. Объекты
+Start: 17.02.23 15:27
+Estimate: 2 Hours
+End: 18.02.23 10:32
+Report Time before: 3:44 Hours
+Actual time: 2:51
+
+6.5 Практическая работа 
+Start: 18.02.23 10:32
+Estimate: 5 Hours
+End: 19.02.23 10:26
+Report Time before: 35 Minutes
+Actual time: 4:42 Hours
+
+7. Экосистема JavaScript и npm 
+Start: 19.02.23 10:31
+Estimate: 4:20 Hours
+End: 19.02.23 17:52
+Report Time before: 10 Minutes
+Actual time: 4:27 Hours
+
+7.6 Практическая работа
+Start: 19.02.23 17:53
+Estimate: 5 Hours
+End: 20.02.23 14:06
+Report Time before: 4:27 Hours
+Actual time: 6:28 Hours
+
+8. Сборка 
+Start: 20.02.23 14:17
+Estimate: 3:42 Hours
+End: 21.02.23 21:42
+Report Time before: 3:35 Hours
+Actual time: 3:35 Hours
+
+8.6 Практическая работа 
+Start: 21.02.23 21:43
+Estimate: 5 Hours
+End: 22.02.23 22:08
+Report Time before: 2:28 Hours
+Actual time: 3:28 Hours
+
+9. Тестирование 
+Start: 22.02.23 22:10
+Estimate: 3:50 Hours
+End: 23.02.23 17:14
+Report Time before: 3:01 Hours
+Actual time: 1:52 Hours
+
+9.6 Практическая работа
+Start: 23.02.23 17:15
+Estimate: 6 Hours
+End: 24.02.23 16:02
+Report Time before: 1:37 Hours
+Actual time: 8:14 Hours
+
+10. База знаний 
+Start: 24.02.23 16:04
+Estimate: 2:30 Hours
+End: 26.02.23 11:13
+Report Time before: 4:28 Hours
+Actual time: 4:25 Hours
+
+Диплом. Верстка.
+Start: 19.03.23 18:48
+Estimate: 20 Hours
+End: 30.03.23 21:36
+Report Time before: 4:22 Hours
+Actual time: 42:23 Hours
+
+Диплом.
+Start: 16.05.23
+Estimate: 60 Hours
+End: 12.06.2023
+Report Time before: 2:21 Hours
+Actual time: 67:50 Hours
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

@@ -1,0 +1,235 @@
+React JS Time Estimates
+
+17 Modules
+96 Lessons
+
+JavaScript-фреймворк React.js
+Start: 12.06.23
+Estimate: 3 Months
+End: 30.09.23
+Actual time: 3 Months and 18 Days
+
+2.6 Практическая работа 
+Start: 31.01.23 10:50
+Estimate: 15 minutes
+End: 31.01.23 11:05
+Actual time: 15 minutes
+
+Module 3. Typescript 
+Start: 31.01.23 11:20
+Estimate: 5:45 Hours
+End: 31.01.23 18:44
+Report Time before: 34 minutes
+Actual time: 4:17
+
+Set up NVim
+Start: 31.01.23 18:44
+Estimate: 3:00 Hours
+End: 02.02.23 13:30
+Report Time before: 30 Minutes
+Actual time: 5:34 Hours
+
+3.8 Практическая работа 
+Start: 02.02.23 16:18
+Estimate: 1:00 Hour
+End: 02.02.23 17:47
+Report Time before: 4:00 Hours
+Actual time: 53 Minutes
+
+4. Компоненты на примере новостной карточки Reddit
+Start: 15.06.23 23:22
+Estimate: 7 Hours
+End: 17.06.23 23:24
+Report Time before: 1:20 Hours
+Actual time: 7:20 Hours
+
+4.8 Практическая работа
+Start: 17.06.23 23:24
+Estimate: 9 Hours
+End: 23.06.23 14:26
+Report Time before: 0
+Actual time: 12:49 Hours
+
+Hooks и Функциональное программирование
+Start: 23.06.23 15:51
+Estimate: 7 Hours
+End: 29.06.23 23:12
+Report Time before: 0
+Actual time: 6:14 Hours
+
+5.6 Практическая работа
+Start: 29.06.23 23:12
+Estimate: 8 Hours
+End: 08.07.23 11:54
+Report Time before: 0
+Actual time: 13:37 Hours
+
+6. Больше о компонентах и введение в тестирование компонентов 
+Start: 08.07.23 11:55
+Estimate: 4:10 Hours
+End: 09.07.23 23:48
+Report Time before: 0
+Actual time: 2:33 Hours
+
+6.6 Практическая работа
+Start: 09.07.23 23:49
+Estimate: 4 Hours
+End: 12.07.23 11:23
+Report Time before: 0
+Actual time: 3:31 Hours
+
+Работа с публичным API на примере Reddit 
+Start: 12.07.23 11:25
+Estimate: 2:20 Hours
+End: 13.07.23 22:54
+Report Time before: 0
+Actual time: 2:57 Hours
+
+7.6 Практическая работа 
+Start: 13.07.23 22:54
+Estimate: 3 Hours
+End: 14.07.23 22:00
+Report Time before: 0
+Actual time: 3:36 Hours
+
+API + Контекст
+Start: 14.07.23 22:00
+Estimate: 2:20 Hours
+End: 14.07.23 23:35
+Report Time before: 0
+Actual time: 1:23 Hours
+
+8.5 Практическая работа 
+Start: 14.07.23 23:40
+Estimate: 5:00 Hours
+End: 22.07.23 22:38
+Report Time before: 2:34 Hours
+Actual time: 18:45 Hours
+
+9. Портал и форма
+Start: 22.07.23 22:50
+Estimate: 2:15 Hours
+End: 23.07.23 11:23
+Report Time before: 0
+Actual time: 2:24 Hours
+
+9.5 Практическая работа 
+Start: 23.07.23 11:24 
+Estimate: 15 Hours
+End: 02.08.23 15:28
+Report Time before: 0
+Actual time: 24:32 Hours
+
+10. Введение в Redux на примере поля для ввода комментария 
+Start: 08.02.23 15:30
+Estimate: 3 Hours
+End: 03.08.23 11:00
+Report Time before: 0
+Actual time: 2:09 Hours
+
+10.5 Практическая работа
+Start: 03.08.23 11:03
+Estimate: 3 Hours
+End: 03.08.23 13:17
+Report Time before: 0
+Actual time: 1:15 Hours
+
+11. Использование Redux-Thunk на примере загрузки профиля пользователя
+Start: 03.08.23 13:24
+Estimate: 3:00 Hours
+End: 04.08.23 22:45
+Report Time before: 2:10 Hours
+Actual time: 2:10 Hours
+
+11.6 Практическая работа 
+Start: 04.08.23 22:48 
+Estimate: 4 Hours
+End: 07.08.23 13:41 Hours
+Report Time before: 0
+Actual time: 5:39 Hours
+
+12. Формы на примере комментариев и карточки поста 
+Start: 07.08.23 13:42
+Estimate: 2:30 Hours
+End: 07.08.23 23:32
+Report Time before: 0
+Actual time: 1:45 Hours
+
+12.6 Практическая работа 
+Start: 07.08.23 23:34
+Estimate: 3 Hours + 45 Minutes
+End: 10.08.23 21:43
+Report Time before: 25 Minutes
+Actual time: 4:45 Hours (1 Hour over estimate)
+
+13. «Бесконечные» списки на примере ленты постов 
+Start: 10.08.23 21:47
+Estimate: 4 Hours
+End: 3 Hours (1 Hour under estimate)
+Report Time before: 0
+Actual time: 
+
+13.6 Практическая работа 
+Start: 11.08.23 15:37
+Estimate: 5 Hours + 1 Hour (6 Hours)
+End: 21.08.23 14:49
+Report Time before: 0
+Actual time: 14:37 (8:37 Hours over estimate)
+
+14. Роутинг 
+Start: 21.08.23 15:51 
+Estimate: 2 Hours
+End: 29.08.23 00:33
+Report Time before: 0
+Actual time: 1:57 Hours
+
+14.5 Практическая работа 
+Start: 29.08.23 00:34
+Estimate: 5 Hours
+End: 13.09.23 14:38
+Report Time before: 0
+Actual time: 10:55 Hours
+
+15. Deploy 
+Start: 13.09.23 14:41
+Estimate: 3 Hours
+End: 14.09.23 23:04
+Report Time before: 0
+Actual time: 2:17 Hours
+
+16. Бонус-модуль: Mobx, effector и другие альтернативы redux
+Start: 14.09.23 23:05
+Estimate: 1:45 Hours
+End: 15.09.23 12:45
+Report Time before: 2:17 Hours
+Actual time: 1:32 Hours
+
+16.5 Практическая работа
+Start: 15.09.23 12:47 
+Estimate: 5 Hours
+End: 16.09.23 13:11
+Report Time before: 0
+Actual time: 3:19 Hours
+
+Финальная работа «JavaScript-фреймворк React.js» - Верстка и проектирование
+Start: 17.09.23 21:50
+Estimate: 22 Hours
+End: 23.09.23 23:35
+Report Time before: 0
+Actual time: 30:21 Hours
+
+Финальная работа «JavaScript-фреймворк React.js» - Основная страница
+Start: 23.09.23 23:40
+Estimate: 50 Hours
+End: 30.09.23
+Report Time before: 6:00 Hours
+Actual time: 33:23 Hours
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

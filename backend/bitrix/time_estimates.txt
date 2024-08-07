@@ -1,0 +1,30 @@
+1C Bitrix Time Estimates
+
+12 Modules
+25 Lessons
+
+1C Bitrix
+Start: 14.06.24
+Estimate: 12 Days
+Break at: 19.06.24
+Time before break: 5 Days
+Break end: 
+End: 
+Actual time: 
+
+1. Философия разработки, подготовка рабочего места 
+Start: 14.06.24 12:20
+Estimate: 1:10 - 3:30 Hours
+End: 19.06.24 12:10
+Report Time before: 0
+Actual time: 1 Hour 
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

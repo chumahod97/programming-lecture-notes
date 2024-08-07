@@ -1,0 +1,254 @@
+Laravel Time Estimates
+
+14 Modules
+82 Lessons
+
+PHP-фреймворк Laravel
+Start: 30.11.23
+Estimate: 1 Month 25 Days
+Break at 22.12.23
+Time before break: 23 Days
+Break end: 11.02.24
+End: 25.02.24
+Actual time: 1 Month and 7 Days
+
+Введение, установка и первичная настройка 
+Start: 02.12.23 10:00
+Estimate: 3:30 Hours
+End: 02.12.23 23:16
+Report Time before: 40 Minutes
+Actual time: 2:18 Hours (1 Hour and 10 Minutes under the limit)
+
+1.9 Практическая работа
+Start: 02.12.23 23:16
+Estimate: 30 Minutes
+End: 02.12.23 23:45
+Report Time before: 0
+Actual time: 30 Minutes
+
+2. Контроллеры, экшены и роутинг 
+Start: 02.12.23 23:45
+Estimate: 5:30 Hours
+End: 04.12.23 14:10
+Report Time before: 3 Hours
+Actual time: 4 Hours (1:30 Hours under the limit)
+
+2.9 Практическая работа 
+Start: 04.12.23 14:10
+Estimate: 4 Hours
+End: 04.12.23 15:30
+Report Time before: 0
+Actual time: 1:15 Hours (2 Hours and 45 Minutes under the limit)
+
+3. Работа с базами данных. ORM-система Eloquent 
+Start: 04.12.23 15:30 
+Estimate: 3:30 Hours
+End: 05.12.23 19:10
+Report Time before: 1:30 Hours
+Actual time: 4:10 Hours (40 Minutes over the limit)
+
+3.9 Практическая работа 
+Start: 05.12.23 19:10
+Estimate: 2 Hours
+End: 05.12.23 20:10
+Report Time before: 1:15 Hours
+Actual time: 1 Hour (1 Hour under the limit)
+
+4. Работа с шаблонами. Шаблонизатор Blade 
+Start: 05.12.23 20:10
+Estimate: 2:30 Hours
+End:  05.12.23 23:45
+Report Time before: 2:10 Hours
+Actual time: 2:30 Hours
+
+4.6 Практическая работа
+Start: 05.12.23 23:45
+Estimate: 4 Hours
+End: 06.12.23 13:50
+Report Time before: 1 Hour
+Actual time: 1:30 Hours (2:30 Hours under the limit)
+
+5. Обработка запроса (Request) 
+Start: 06.12.23 13:50
+Estimate: 3:30 Hours
+End: 06.12.23 23:40
+Report Time before: 0
+Actual time: 2:10 Hours (1 Hour 20 Minutes under the limit)
+
+5.7 Практическая работа 
+Start: 06.12.23 23:40
+Estimate: 10 Hours
+End: 07.12.23 16:20
+Report Time before: 1:15 Hours
+Actual time: 4:40 (5:20 Hours under the limit)
+
+6. Работа с формами
+Start: 07.12.23 16:20
+Estimate: 6 Hours
+End: 08.12.23 23:05
+Report Time before: 0
+Actual time: 4:10 Hours (1:50 Hours under the limit)
+
+6.6 Практическая работа
+Start: 08.12.23 23:10
+Estimate: 2-6 Hours
+End: 09.12.23 14:00
+Report Time before: 0
+Actual time: 1:30 (30 Minutes under the limit)
+
+7. Формирование ответа (Response) 
+Start: 09.12.23 14:00
+Estimate: 3:00 - 3:30 Hours
+End: 09.12.23 17:30
+Report Time before: 0
+Actual time: 2:10 (50 Minutes under the limit)
+
+7.6 Практическая работа 
+Start: 09.12.23 17:30
+Estimate: 4 - 10 Hours
+End: 09.12.23 23:10
+Report Time before: 1:10 Hours
+Actual time: 2:15 Hours (1:45 Hours under the limit)
+
+8. Сервисы: создание и использование 
+Start: 09.12.23 23:10
+Estimate: 2:15 Hours
+End: 10.12.23 20:00
+Report Time before: 2:10 Hours
+Actual time: 3 Hours (50 Minutes over the limit)
+
+Services container. Services provider.
+Start: 10.12.23 20:30
+Estimate: 2 Hours
+End: 10.12.23 23:00
+Report Time before: 2:20 Hours
+Actual time: 50 Minutes (1:10 Hours under the limit)
+
+Services Exercise
+Start: 10.12.23 23:00
+Estimate: 3 - 6 Hours
+End: 12.12.23 15:20
+Report Time before: 0
+Actual time: 5:45 Hours
+
+Middleware Theory.
+Start: 12.12.23 15:20
+Estimate: 3 Hours
+End: 12.12.23 19:00
+Report Time before: 0
+Actual time: 2:10 Hours
+
+Middleware Practice. Throttle.
+Start: 12.12.23 19:00
+Estimate: 1 - 3 Hours
+End: 12.12.23 19:50
+Report Time before: 50 Minutes
+Actual time: 1 Hour
+
+8.6 Практическая работа 
+Start: 12.12.23 20:00
+Estimate: 2 - 6 Hours
+End: 12.12.23 22:40
+Report Time before: 1:50 Hours
+Actual time: 1:30 (30 Minutes under the limit)
+
+9. Работа с событиями 
+Start: 12.12.23 22:40
+Estimate: 1:30 Hours
+End: 13.12.23 14:10
+Report Time before: 2:10 Hours
+Actual time: 2:40 Hours (1:10 Hours over the limit)
+
+9.7 Практическая работа 
+Start: 13.12.23 14:10
+Estimate: 2 - 6 Hours
+End: 15.12.23 23:59
+Report Time before: 0
+Actual time: 3:20 Hours
+
+10. Встроенные возможности Laravel 
+Start: 16.12.23 0:00
+Estimate: 2 Hours
+End: 17.12.23 11:20
+Report Time before: 0
+Actual time: 1:50 Hours (10 Minutes under the limit)
+
+10.6 Практическая работа
+Start: 17.12.23 11:20
+Estimate: 2 - 6 Hours
+End: 17.12.23 13:05
+Report Time before: 0
+Actual time: 40 Minutes (1:20 Hours under the limit)
+
+11. Реализация авторизации
+Start: 17.12.23 13:05
+Estimate: 1:20 - 2 Hours
+End: 17.12.23 14:40
+Report Time before: 30 Minutes
+Actual time: 1:30 Hours
+
+11.6 Практическая работа
+Start: 17.12.23 14:40
+Estimate: 2 - 6 Hours
+End: 17.12.23 18:00
+Report Time before: 40 Minutes
+Actual time: 2:30 Hours
+
+12. Интеграция с внешними сервисами 
+Start: 18:00
+Estimate: 1:30 - 2:30 Hours
+End: 17.12.23 23:05
+Report Time before: 2 Hours
+Actual time: 2:10 Hours
+
+12.7 Практическая работа
+Start: 17.12.23 23:05
+Estimate: 2 - 4 Hours
+End: 18.12.23 14:00
+Report Time before: 3:10 Hours
+Actual time: 3:20 Hours
+
+13. Тестирование и отладка Laravel-приложений 
+Start: 18.12.23 14:00
+Estimate: 2 - 3 Hours
+End: 18.12.23 23:10
+Report Time before: 0
+Actual time: 2 Hours
+
+13.6 Практическая работа 
+Start: 18.12.23 23:10
+Estimate: 3 - 7 Hours
+End: 19.12.23 22:40
+Report Time before: 2:30 Hours
+Actual time: 4:30 Hours
+
+14. Создание администраторской панели 
+Start: 19.12.23 22:50
+Estimate: 1:40 - 2:30
+End: 20.12.23 11:30
+Report Time before: 0
+Actual time: 1:50 Hours
+
+14.6 Практическая работа
+Start: 20.12.23 11:30
+Estimate: 3 - 7 Hours
+End: 22.12.23 23:00
+Report Time before: 40 Minutes
+Actual time: 5 Hours
+
+Final work
+Start: 13.02.24 18:30
+Estimate: 7 - 14 Days
+End: 25.02.24 1:00
+Report Time before: 0
+Actual time: 12 Days
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

@@ -1,0 +1,298 @@
+PHP Time Estimates
+
+18 Modules
+110 Lessons
+
+PHP-разработчик. Базовый уровень
+Start: 30.09.23
+Estimate: 1 Month 10 Days
+
+Break: 26.10.23
+Time Before break: 27 Days
+Continued: 04.11.23
+
+End: 30.11.23
+Actual time: 1 Month 23 Days (13 Days over the limit)
+
+1. Введение в программирование на PHP 
+Start: 30.09.23 22:00
+Estimate: 3 Hours
+End: 1.10.23 11:30
+Report Time before: 0
+Actual time: 2:34 Hours
+
+1.7 Практическая работа 
+Start: 1.10.23 11:30
+Estimate: 1 Hour
+End: 1.10.23 11:50
+Report Time before: 0
+Actual time: 20 Minutes
+
+2. Переменные, числа и boolean 
+Start: 1.10.23 11:50
+Estimate: 1:30 Hours
+End: 1.10.23 12:40
+Report Time before: 51 Minutes
+Actual time: 47 Minutes
+
+2.8 Практическая работа 
+Start: 1.10.23 12:40
+Estimate: 30 Minutes
+End: 1.10.23 12:56
+Report Time before: 17 Minutes
+Actual time: 15 Minutes
+
+3. Условные операторы и булева алгебра 
+Start: 1.10.23 14:22
+Estimate: 1 Hour 10 Minutes
+End: 1.10.23 14:50
+Report Time before: 2 Hours 3 Minutes
+Actual time: 28 minutes
+
+3.5 Практическая работа 
+Start: 1.10.23 14:50
+Estimate: 30 Minutes
+End: 1.10.23 15:42
+Report Time before: 00:32
+Actual time: 50 Minutes
+
+4. Строки и массивы 
+Start: 1.10.23 15:50
+Estimate: 2 Hours
+End: 1.10.23 18:04
+Report Time before: 2:30 Hours
+Actual time: 1:50 Hours
+
+4.6 Практическая работа 
+Start: 1.10.23 18:06
+Estimate: 40 Minutes
+End: 1.10.23 19:10
+Report Time before: 1:22 Hours
+Actual time: 1 Hour
+
+5. Циклы 
+Start: 1.10.23 19:12
+Estimate: 35 Minutes
+End: 1.10.23 20:13
+Report Time before: 4:21
+Actual time: 32 Minutes
+
+5.6 Практическая работа 
+Start: 1.10.23 20:15
+Estimate: 1:30 Hours
+End: 1.10.23 22:45
+Report Time before: 2:24 Hours
+Actual time: 1:25 Hours
+
+6. Функции: создание и использование 
+Start: 1.10.23 22:50
+Estimate: 1 Hour
+End: 1.10.23 23:50
+Report Time before: 4:53
+Actual time: 1 Hour
+
+6.6 Практическая работа 
+Start: 2.10.23 10:30
+Estimate: 1:30 Hours
+End: 2.10.23 11:35
+Report Time before: 0
+Actual time: 45 Minutes
+
+7. Рекурсия, callback и анонимные функции 
+Start: 2.10.23 11:35
+Estimate: 40 Minutes
+End: 2.10.23 13:17
+Report Time before: 0
+Actual time: 51 Minutes
+
+7.5 Практическая работа 
+Start: 2.10.23 13:17
+Estimate: 3 Hours
+End: 2.10.23 13:45
+Report Time before: 43 Minutes
+Actual time: 30 Minutes
+
+8. Классы и объекты 
+Start: 2.10.23 13:45
+Estimate: 1 Hour
+End: 2.10.23 14:55
+Report Time before: 51 Minutes
+Actual time: 55 Minutes
+
+8.5 Практическая работа 
+Start: 2.10.23 14:55
+Estimate: 1:30 Hours
+End: 3.10.23 16:00
+Report Time before: 1:11 Hours
+Actual time: 1:30 Hours
+
+9. Наследование и абстрактные классы 
+Start: 3.10.23 16:00
+Estimate: 45 Minutes
+End: 3.10.23 18:10
+Report Time before: 0
+Actual time: 28 Minutes
+
+9.5 Практическая работа 
+Start: 3.10.23 18:10
+Estimate: 2 Hours
+End: 3.10.23 19:50
+Report Time before: 5 Hours
+Actual time: 1:30 Hours
+
+10. Интерфейсы и полиморфизм 
+Start: 3.10.23 19:50
+Estimate: 45 Minutes
+End: 3.10.23 22:45
+Report Time before: 30 Minutes
+Actual time: 1:11 Hour
+
+10.4 Практическая работа 
+Start: 3.10.23 22:45
+Estimate: 4 Hours
+End: 4.10.23 11:30
+Report Time before: 6:48 Hours
+Actual time: 2:22 Hours
+
+11. Модификаторы доступа, геттеры и сеттеры 
+Start: 4.10.23 11:30
+Estimate: 1:30 Hours
+End: 4.10.23 16:04
+Report Time before: 0
+Actual time: 1:04 Hours
+
+11.5 Практическая работа 
+Start: 4.10.23 16:04
+Estimate: 1 Hour
+End: 5.10.23 00:00
+Report Time before: 1:06 Hours
+Actual time: 2:35 Hours
+
+12. HTML/CSS 
+Start: 5.10.23 00:05
+Estimate: 3 Hours
+End: 5.10.23 18:44
+Report Time before: 0
+Actual time: 2:10 Hours
+
+13. Разделение приложения на файлы 
+Start: 5.10.23 18:46
+Estimate: 1:30 Hours
+End: 5.10.23 23:45
+Report Time before: 2:00 Hours
+Actual time: 2:46 Hour
+
+13.7 Практическая работа 
+Start: 5.10.23 23:45
+Estimate: 1:30 Hours
+End: 6.10.23 15:00
+Report Time before: 2:24 Hours
+Actual time: 3 Hours
+
+14. Работа с файлами и с сетью 
+Start: 6.10.23 15:00
+Estimate: 2 Hours
+End: 6.10.23 17:00
+Report Time before: 0
+Actual time: 1:22 Hours
+
+15. Обработка ошибок, Exceptions и логи 
+Start: 6.10.23 17:05
+Estimate: 1:30 Hours
+End: 6.10.23 23:30
+Report Time before: 1:22 Hours
+Actual time: 1:06 Hours
+
+15.6 Практическая работа 
+Start: 6.10.23 23:30
+Estimate: 4 Hours
+End: 10.10.23 23:30
+Report Time before: 3:30 Hours
+Actual time: 34 Hours
+
+16. Протокол HTTP 
+Start: 10.10.23 23:30
+Estimate: 3:30 Hours
+End: 22.10.23
+Report Time before: 0
+Actual time: 15:30 Hours
+
+12.15 Практическая работа 
+Start: 16.10.23 11:45
+Estimate: 5 Hours
+End: 18.10.23 16:00
+Report Time before: 30 Minutes
+Actual time: 8 Hours
+
+17. Обработка GET- и POST-запросов, header, куки и сессии
+Start: 22.10.23 15:30
+Estimate: 4 Hours
+End: 22.10.23 19:30
+Report Time before: 2:15 Hours
+Actual time: 3:00 Hours
+
+17.7 Практическая работа
+Start: 22.10.23 19:30
+Estimate: 4 Hours
+End: 23.10.23 00:30
+Report Time before: 30 Minutes
+Actual time: 3:30 Hours
+
+18. REST и RESTful API 
+Start: 23.10.23 0:30
+Estimate: 3:45 Hours
+End: 24.10.23 15:40
+Report Time before: 0
+Actual time: 4 Hours (15 Minutes over the limit)
+
+18.5 Практическая работа
+Start: 24.10.23 15:40
+Estimate: 6 Hours
+End: 26.10.23 15:40
+Report Time before: 0
+Actual time: 8:50 Hours (2:50 Hours over the limit)
+
+20. Работа с базами данных в PHP
+Start: 04.11.23 15:11
+Estimate: 6 Hours
+End: 04.11.23 19:25
+Report Time before: 2:14 Hours
+Actual time: 3 Hours (3 Hours under the limit)
+
+20.6 Практическая работа 
+Start: 04.11.23 19:30
+Estimate: 6 Hours
+End: 06.11.23 11:30
+Report Time before: 0
+Actual time: 11:40 Hours (5:40 Hours over the limit)
+
+21. Фреймворк Laravel 
+Start: 06.11.23 11:30
+Estimate: 5 Hours
+End: 07.11.23 12:00
+Report Time before: 0
+Actual time: 5:20 Hours (20 Minutes over the limit)
+
+21.7 Практическая работа 
+Start: 07.11.23 12:10
+Estimate: 12 Hours
+End: 10.11.23 23:30
+Report Time before: 0
+Actual time: 14:15 Hours (2:15 Hours over the limit)
+
+Final Work
+Start: 14.11.23 19:50
+Estimate: 40 Hours
+End: 30.11.23 11:30
+Report Time before: 3:50 Hours
+Actual time: 92 Hours (52 Hours over the limit)
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

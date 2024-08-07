@@ -1,0 +1,672 @@
+PHP Notes
+
+Important notes and links
+
+---
+
+Here are the allowed types and the minimum PHP version to use them:
+
+* Class/interface name - PHP 5.0.0
+* self - PHP 5.0.0
+* array - PHP 5.1.0
+* callable - PHP 5.4.0
+* bool - PHP 7.0.0
+* float - PHP 7.0.0
+* int - PHP 7.0.0
+* string - PHP 7.0.0
+* mixed - PHP 8.0.0
+* static - PHP 8.0.0 (for return type only)
+
+PHP 8.0 also introduces union types with the following syntax : bool|string which will allow booleans or strings. (rfc)
+
+---
+
+1.2 Язык PHP: для чего используется и как выглядит 
+
+  Что делает PHP?
+  - Обрабатывает данные от пользователя
+  - Комбинирует данные полученные извне
+  - Выдаёт результат пользователю в виде HTML-кода для страницы в браузер
+
+1.4 Установка IDE и окружения 
+
+  Преимущества PHPStorm
+    - Debugging tools
+    - Database tools
+    - Code Quality Analysis
+
+  Среда для запуска PHP скриптов - XAMPP (Cross-platform Apache MySQL PHP Perl)
+
+2.1 Переменные и типы данных (обзор)
+
+  Возможность инициализировать несколько переменных
+  $a = $b = 10;
+
+  В PHP добавили возможность строгой типизации.
+
+2.2 Числа (целые и с плавающей точкой)
+
+  Типы данных в PHP 
+    - 4 простых типа
+      - integer
+      - float
+      - boolean
+      - string
+    - 2 смешанных типа
+      - array
+      - object
+    - 2 специальных типа
+      - resource
+      - null
+
+  var_dump(value) - Dumps information about a variable
+
+  Проверки на null:
+  $var == null;
+  isset($var);
+  is_null($var);
+
+Условные операторы и булева алгебра 
+
+  if (bool) {}
+  elseif (newBool) {}
+
+  NULL-коалесцентный оператор
+  $notNull = $possiblyNull ?? defaultNotNullValue;
+
+
+Строки и массивы
+
+  Экранирование кавычек в строке:
+  ' \' '
+  " \" "
+
+  В двойных кавычках можно использовать спец символы и переменные
+
+  Heredoc синтаксис для задания строки:
+  $heredocString = <<<ENDIDENTIFICATORNAME
+  some text
+  some more text
+  ENDIDENTIFICATORNAME;
+
+  Оператор конкатенации строк - .
+  $concatenatedString = $str1 . $str2;
+
+  strlen - Получить длину строки
+  Русские символы имею длину 2
+  mb_strlen - Получить длину мультибайтовой строки
+
+  substr - Получить подстроку
+  strpos - Получить позицию подстроки
+  stripos - Case-insensetive
+  str_replace - Замена подстроки
+  str_ireplace - Case-insensetive
+  strtolower - Замена на нижний регистр
+  strtoupper - Замена на верхний регистр
+  trim - Очистка строки от пробельных символов
+  ltrim - Слева
+  rtrim - Справа
+
+
+4.3 Массивы
+
+  Массивы бывают двух типов:
+    - Простые массивы
+    - Ассоциативные массивы
+
+  $array[] = value; - Добавить в последний индекс массива
+  $array = [1, 2, 3, 4, 5];
+
+  $associativeArray = ['key1' => 'value1', 'key2' => 'value2'];
+
+  sizeof($array) или count($array) - Длина массива
+
+  explode и implode - Деление строки на массив и наоборот
+
+  $matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ];
+
+  array_keys($array) - Получить ключи ассоциативного массива
+  array_values($array) - Получить значения массива
+  array_merge($array1, $array2) - Слить массивы
+  array_combine($keysArray, $valuesArray) - Обьединить простые массивы в ассоциативный
+  array_flip($associativeArray) - Поменять местами ключи и значения
+  array_reverse($array, $preserveKeys) - Отзеркалить массив
+  in_array($needle, $array);
+  array_search($needle, $array);
+
+5.3 Цикл foreach 
+
+  foreach($array as $value)
+  foreach($array as $key => $value)
+
+
+Рекурсия, callback и анонимные функции 
+
+  Передача callback-функции someFunc('functionName');
+
+  Функции имеют тип callable
+
+  array_map('callbackName', $array);
+
+  Анонимная функция - $functionVar = function ($arg) {}
+
+  Замыкание - function () use ($closureVar, $closureVar2) {};
+
+  Чтение из консоли - readline('Prompt message');
+
+  Стрелочные функции - fn () => returnValue | {}
+  Для неё не нужно использовать оператор use
+
+  global $globalVar - Добавить переменную из глобальной области видимости
+
+
+ 8.1 Понятие класса, метода и объекта 
+
+ class ClassName {
+   public $prop1, $prop2;
+
+   function __construct($prop1) {}
+
+   function methodName() {}
+
+   function getProp1() {
+      return $this->prop1;
+     }
+ }
+
+ $object = new ClassName();
+ $object->methodName();
+
+ Обращение к классу - ::self
+
+ const CONSTANT_NAME = $someValue;
+ self::CONSTANT_NAME
+
+ Предопределенные константы
+  __CLASS__ - Имя класса
+  __METHOD__ - Имя метода
+
+  static $fieldName - Статическое поле
+  ClassName::staticField
+
+
+Наследование и абстрактные классы 
+
+  parent::methodName() - Вызов родительского метода
+
+  abstract class AbstractClassName {
+    abstract function methodName();
+  }- Абстрактный класс
+
+
+9.4 Трейты (Traits) 
+
+  Трейт - это механизм повторного использования кода в несвязанных между собой классах.
+
+  trait traitName {
+    function traitMethod() {}
+  }
+
+  class A {
+    use traitName;
+  }
+
+  Трейт - может иметь абстрактные методы
+
+
+10. Интерфейсы и полиморфизм 
+
+  Интерфейсы - это именованный набор методов, которые должен реализовать класс.
+
+  interface InterfaceName {
+    public function someMethod();
+  }
+
+  class A implements InterfaceName {}
+
+  Интерфейсы поддерживают наследование.
+  Класс может реализовывать несколько интерфесов.
+
+  Встроенные интерфейсы PHP:
+
+  Countable - Можно передать в функцию count()
+
+    interface Countable {
+      public count(): int;
+    }
+
+  Iterator - Позволяет реализовать класс для взаимодействия с внешним итератором, либо объект который может повторять себя.
+
+  Serializable - Позволяет сериализовать и десериализовать себя.
+  
+  Stringable - Позволяет задать свою реализацию для метода __toString для преобразования объекта в строку.
+
+  ArrayAccess - Обеспечивает доступ к полям объекта подобно массиву, то есть с использованием квадратных скобок.
+
+
+11. Модификаторы доступа, геттеры и сеттеры 
+
+  static:: вместо self:: - Механизм позднего статического связывания.
+
+  Магические методы __get и __set
+
+  public function __set($name, $value) {
+    if ($name === 'propName') {
+      // Setter logic
+    }
+  }
+
+  $object->propName = $someValue;
+
+
+ 13.1 Подключение PHP-файлов друг к другу 
+
+  include <path_to_file><filename>
+
+  include_once <path><filename> -  Если файл подключался ранее то оператор просто возвращает true
+
+  require - аналог include, но если на этапе подключения файла возникает ошибка, то require останавливает выполнение программы и вызывает фатальную ошибку.
+
+  require_once (Рекомендуется)
+
+
+ 13.3 Пространства имён 
+
+  namespace Library1;
+
+  $testObject = new Library1\TestClass();
+
+  use My\VeryLong\Classname as ShortName; - Псевдоним
+
+  Для обращения к глобальному пространству имен (пространству имен по умолчанию) используется \
+
+
+13.4 Автоподгрузка классов 
+
+  function LoaderLib1($className) 
+  {
+    $filePath = 'library1' . $className . '.php';
+
+    if (file_exists($filePath)) {
+      require_once $filePath;
+    }
+  }
+
+  spl_autoload_register('LoaderLib1');
+
+
+13.5 Composer 
+
+  packagist.org - Оффициальный репозиторий для composer
+
+  Основные комманды composer:
+    install
+    update
+    remove
+    require - Добавление новой зависимости в composer.json
+    dump-autoload - Пересборка автозагрузчика
+
+  composer install is for installing all packages of new application (all mentioned in composer.json), use: composer install
+
+  composer require is for adding a new package, use: composer require symfony/symfony
+
+  require_once 'vendor/autoload.php'; - Подключение composer в коде проекта.
+
+
+14.1 Чтение и запись файлов 
+
+  fopen(string $filename, string $mode): resource - Открытие файла
+
+  fclose(resource $filePointer) - Закрыть файл
+
+  fread(resource $stream, int $length): string|false - Чтение файла
+
+  feof - Проверка на конец файла
+
+  filesize(string $filename): int|false;
+
+
+ 14.4 Формат XML 
+
+ simpleXML - Библиотека для работы с XML
+
+
+14.6 Работа с сетью 
+
+  file_get_contents - Позволяет получать файлы по url
+
+
+15.1 Понятие ошибки и исключения, уровни вывода 
+
+  Опции php.ini
+    - display_errors - выключает или включает вывод ошибок
+    - error_reporting - Задает уровень ошибок для вывода
+    Также есть одноименные функции
+
+
+15.2 Exception. Try, catch, finally 
+
+  throw new MyException();
+
+  try {
+  } catch (ExceptionType $exception) {
+    // Выполниться если выброшено ExceptionType
+  } finally {}
+
+
+15.3 Лог-файлы 
+  
+  Опции php.ini
+
+  error_log - Назначить путь журнала
+  log_errors = [1|0] - Включение и отключение логирования
+  display_errors - Включить или отключить отображение ошибок для пользователя
+
+
+15.4 Обработчики ошибок 
+
+  set_error_handler(callback, error_levels); - Обработчик ошибок
+  set_exception_handler - Обработчик исключений
+
+
+16.1 Протокол HTTP. Запрос и ответ 
+
+  http - 80 порт
+  https - 443 порт
+
+  HTTP запрос и ответ состоят из 3 частей:
+    - Request line
+    - Headers
+    - Body
+
+  Тело запроса:
+    - Пустое
+    - Параметры запроса (Данные формы)
+    - Данные (Например JSON)
+    - Файл
+
+
+16.2 Методы HTTP-запросов GET и POST
+
+  GET
+    - Безопасный
+    - Тело GET-Запроса пустое
+    - Параметры передаются в строке запроса
+
+  GET Запрос с параметрами (query parameters):
+  /index.php (Page name) ?lang=ru&new=true&count=567 (Query string)
+
+  POST
+    Используется для отправки данных на сервер
+    - Небезопасный
+    - Тело содержит данные
+    - Используется в HTML-формах 
+    - Тип данных может быть любой
+
+  Кодировки данных отправляемых POST
+  HTML Формы
+    - application/x-www-form-urlencoded
+    - multipart/form-data
+    - text/plain
+  Приложения
+    - application/json
+
+
+16.5 Адресация сетевых ресурсов
+
+  Авторизация в URL
+  https://login:password@www.example.com/
+
+  Доменное имя со всеми компонентами:
+  https://user:pass@www.example.com:8080/index.php?id=3561&count=567#section
+
+  https
+  ://
+  user:pass@
+  www.
+  example.
+  com
+  :8080
+  /index.php
+  ?id=3561&count=567
+  #section
+
+
+17.1 Обработка данных, переданных в GET-запросе
+
+  $_GET - Ассоциативный массив который содержит все GET-Параметры
+
+  Рекомендации по использованию GET-параметров
+    - Не передавайте пароли и другие конфиденциальные данные в URL параметрах - их легко прочитать.
+    - Старайтесь избегать передачи длинных строк, а также структурированных данных (например форматированных текстов).
+      Настроки сервера могут ограничивать длину URL.
+    - При обработке URL-параметров на стороне сервера помните о том, что их значения легко изменить прямо в строке адреса.
+
+
+17.2 POST-запросы
+
+  $_POST - Ассоциативный массив который содержит все POST-Параметры
+
+
+17.3 Получение файлов (массив $_FILES)
+
+  Все файлы передаются в PHP в массив $_FILES.
+
+  Наиболее важные элементы этого массива.
+  tmp_name - Имя файла во временном хранилище
+  name - Имя файла
+  type
+  size
+
+  - Временное хранилище автоматически очищается
+
+  move_uploaded_file($from, $to) - Функция переноса файла из временного хранилища
+
+  Важно: move_uploaded_file (как и остальные функции работы с файлами) необходимо использовать в блоке try catch
+
+
+17.4 Формирование ответа PHP-скриптом
+
+  header(string $header, bool $replace = true, int $response_code = 0): void - Позволяет добавить заголовок и изменить код ответа
+
+  Функции header() должны быть вызваны до какого либо вывода.
+
+
+17.5 Запоминание данных на стороне клиента. Куки и их параметры
+
+setcookie(string $name, string $value = "", int $expires_or_options = 0, ...) - функция установки cookie
+
+$_COOKIE[$cookieName] - Массив cookie
+
+
+17.6 Запоминание данных на стороне сервера. Сессии
+
+  - Клиент может подделать значения куки
+  - В куки опасно хранить данные, которые могут повлиять на безопасность приложения (Например номер банковского счёта или идентификатор транзакции)
+
+  Сессия — это уникальный файл, который создаётся
+  для конкретного клиента во временном хранилище
+  PHP на сервере и также как и куки, содержит
+  параметры в виде пар «ключ — значение».
+
+  Сессия имеет время жизни, то есть промежуток
+  времени, через который происходит её уничтожение. 
+
+  session_start() - функция создания сессии
+
+  Если сессия существует, то все сохранённые параметры
+  автоматически подгружаются в суперглобальный массив
+  $_SESSION. Из него можно не только читать параметры,
+  но и записывать.
+
+  session_destroy() - уничтожение сессии
+
+
+18.1 REST и RESTful API
+
+  REST (Representational State Transfer —
+  «передача репрезентативного состояния») —
+  это «архитектурный стиль», предназначенный
+  для организации взаимодействия компонентов
+  распределённого приложения по сети.
+
+
+18.2 Обработка запросов методами HTTP
+
+  $_SERVER['REQUEST_METHOD'] - Хранит название метода запроса
+
+  POSTMAN - Утилита позволяющая генерировать HTTP запросы и обрабатывать ответы на стороне клиента
+
+
+18.3 Ответ скрипта по стандарту REST. Роутинг (Nginx)
+
+  $_SERVER['REQUEST_URI'] - Запрашиваемы URL
+  Для перенаправления всех запросов по URL сайта на единую точку входа (PHP-скрипт) предназначен механизм rewrite.
+
+
+18.4 Делаем запросы из скрипта с помощью cURL
+
+  cURL - наиболее гибкая реализация HTTP-клиента для PHP.
+
+
+20.2 Что такое PDO. Подключение к базе данных
+
+  Виды интерфесов с MySQL для PHP:
+    - php_mysql - устарел
+    - php_mysqli
+    - php_pdo
+
+  PDO — PHP Data Objects, расширение PHP,
+    реализующее интерфейс взаимодействия с базой
+    данных в объектно-ориентированном виде
+
+
+20.3 Получение данных из базы
+
+  fetch - возвращает первую строку и переносит указатель на следующую.
+  fetch может возвращать данные в нескольких режимах
+
+  PDO::FETCH_ASSOC - ассоциативный массив
+
+  PDO::FETCH_NUM - нумерованный массив
+
+  PDO::FETCH_OBJ - объект
+
+  PDO::FETCH_CLASS - класс
+
+  fetchAll - получить все строки
+  fetchColumn - получить результаты из одной колонки
+
+
+20.4 Предобработка запросов и параметры
+
+  В execute() можно передавать неименованные параметры - '?', именнованные параметры - ':id'
+  или биндить их до запуска.
+
+  bindValue - передает значение
+  bindParam - передает ссылку на переменную
+
+
+20.5 Добавление и изменение данных в базе
+
+  Настоятельно рекомендуется использовать параметры запросов в вашем коде.
+
+  Транзакция — это группа последовательных запросов к базе данных,
+  которая представляет собой логическую единицу работы с данными.
+
+  Транзакция считается выполненной, только если все запросы
+  в ней выполнены успешно.
+
+  Если у вас используются несколько взаимосвязанных запросов
+  на вставку или изменение данных, настоятельно рекомендуется
+  использовать транзакции.
+
+  $connection->beginTransaction(); - начать транзакцию
+
+  $connection->rollback(); - откатить транзакцию
+
+  $connection->commit(); - подтвердить транзакцию
+
+  $connection->lastInsertId() - получения созданного id
+
+
+21.2 Контроллеры и экшены, роутинг
+
+  composer create-project laravel/laravel project-name
+
+  php artisan make:controller ControllerName - создание контроллера
+
+
+21.3 Обработка запросов в экшенах
+
+  Использование объекта класса Request удобнее и безопаснее
+  в сравнении с суперглобальными массивами $_GET и $_POST.
+
+  public function testGet(Request $request)
+  {
+    $itemsNumber = $request->get('paramName');
+  }
+
+
+21.4 Формирование ответа. Шаблоны
+
+  Response - класс HTTP ответа
+  RedirectResponse('target_url') - предназначен специально для 
+  организации редиректов
+
+  Чтобы отделить логику от внешнего вида и соответствовать модели MVC
+  в Laravel используются шаблоны.
+
+  Шаблон — это файл, содержащий вёрстку, а также некоторые базовые
+  логические конструкции.
+
+  Laravel может работать с различными типами шаблонов, но по умолчанию
+  используется шаблонизатор Blade.
+
+
+  $view = view('template-name')->with(['param-name' => paramValue]);
+  return new Response($view);
+  - Пример создания ответа с шаблоном
+
+
+21.5 Работа с БД: репозитории и сущности
+
+  Для работы с БД предусмотрена ORM Eloquent
+  ORM - Object-Relational Mapping
+
+  В концепции ORM каждой таблице базы данных
+  соответствует некая сущность, которая в свою
+  очередь представлена классом.
+  Класс определяет программист, но он должен
+  быть наследником встроенного класса Model.
+
+  php artisan config:clear - очистка кэша конфигурации
+  php artisan make:model ModelName --migration - генерация сущности
+
+  Рекомендуется выполнять действия с БД с помощью миграций.
+
+  php artisan migrate - запустить процесс миграции
+
+
+  Когда нужно реализовать логику работы с сущностями используются
+  репозитории.
+
+  Репозиторий — это специальный класс, который описывается
+  программистом. Каждый метод такого класса отвечает за какое-то
+  действие над экземплярами сущности.
+
+  Например, если вам нужно реализовать фильтрацию записей таблицы
+  базы данных по ключевому слову, логично создать метод репозитория
+  applyFilter и описать в нём логику фильтрации.
+
+
+21.6 Авторизация пользователей в Laravel
+
+  php artisan make:auth - активация auth
+
+  composer require laravel/ui
+  php artisan ui vue --auth

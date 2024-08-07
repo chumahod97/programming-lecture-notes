@@ -1,0 +1,998 @@
+React JS Notes
+
+----__ Header __----
+
+Стэк технологий описан в видео 1.5 Экосистема React, основные библиотеки, из чего обычно состоит реакт стэк.
+
+https://github.com/TaoriYu/generator-react-ts-component-dir - Для быстрой генерации компонентов
+
+На сайте react.js есть утилиты для рефакторинга на другую версию
+
+----__ End of header __---
+
+
+1.5 Экосистема React, основные библиотеки, из чего обычно состоит реакт стэк.
+  Сборка - WebPack
+  Транспилятор - TypeScript или Babel ?
+  Статический анализатор кода - TypeScript
+  React - React
+  State manager - Redux и Mobx
+  State manager MiddleWare - Redux.Thunk и Mobx.Utils
+  Routing - React Router
+  Тесты - Jest
+  Другие утилиты - Axios, StoryBook
+  SSR - Next.js, Node.js Express
+  Линтеры - ESLint
+
+
+2.1 Конфигурация webpack на клиенте 
+
+  Установка глобально webpack:
+
+  npm install --global webpack@4.42.0 webpack-cli@3.3.11
+
+  Установка глобально typescript:
+
+  npm install typescript@4.6.4 -g
+
+
+  При установке на MacOS также требуется ввести команду sudo. При вводе данной команды терминал запросит логин и пароль пользователя для установки пакета.
+
+  При установке зависимостей установите пакеты:
+
+  react и react-dom:
+
+  npm install react@17.0.1 react-dom@17.0.1
+
+
+  Для корректной работы, установите следующие версии webpack и webpack-cli:
+
+  npm i -D webpack@4.42.0 webpack-cli@3.3.11
+
+  Typescript в проекте:
+
+  npm i -D typescript@4.6.4 ts-loader@6.2.1
+
+  Плагин html-webpack:
+
+  npm i -D html-webpack-plugin@4
+
+  Плагин webpack-server:
+
+  npm i -D webpack-dev-server@3.10.3
+
+
+  Если вы используете windows, нужно установить cross-env
+
+  npmjs.com
+
+  В скриптах обращаться не env, а cross-env, например
+
+  cross-env NODE_ENV=development node ./bin/dev.js
+
+  Сборка SSR является обязательной!
+
+
+  Rules in tsconfig.json: 
+
+  "jsx": "react", /* Specify what JSX code is generated. */
+    "allowJs": true, /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */
+
+
+  see if it saves or not
+
+  Зависимости из урока:
+
+  npm i -D webpack-dev-middleware@3.7.2 webpack-hot-middleware@2.25.0 react-hot-loader@4.12.20 @hot-loader/react-dom@17.0.1
+
+  npm i -D clean-webpack-plugin@3.0.0
+
+
+3.2 Работа с массивами 
+  // Union type
+  let var : string | number;
+
+  // Type alias
+  type typeName = /* custom type */
+
+  // TS types
+  any unknown never
+
+  // Array type
+  typeName[]
+
+  // Generic declaration
+  Array<typeName>
+
+  // Union array
+  (string | number)[]
+
+  // Tuple
+  [string, number] = ['str', 1]
+
+
+3.3 Работа с объектами и интерфейсами 
+
+  // Object declaration
+  let obj: {a: number, b: string, c: someType} = {1, 'str', []}
+
+  // Interface
+  interface MyFirstInterface {
+    a: number;
+    b: string;
+    c: number[];
+  }
+
+  const obj: MyFirstInterface = {
+    // params
+  };
+
+  Interface parameter can be read only
+  readonly a: number
+
+  // Optional type
+  // Doesn't have to be initialized
+  var?: typeName
+
+  // Index signatures
+  interface IndexInterface {
+    [key: string]: number;
+  }
+  The key of the index signature can only be a string, number, or symbol. 
+
+
+3.4 Типизация функций и типы ТС 
+
+  function someFunc(param: paramType): returnType {
+
+  // literal type
+  var: 'someString' | 'someOtherString'
+
+  // function type
+  type ArrowFunction = () => typeName;
+
+  interface FunctionInterface {
+    (param: typeName): returnTypeName;
+  }
+
+  TS types:
+  any - any type
+  unknown - currently unknown type (all operations disabled before finding out type)
+  never - function return type for functions that never return
+
+  Тип enum или перечисление позволяет определить набор именнованных констант, которые описывают определенные состояния.
+
+  enum EnumTypeName {option1, option2, ...}
+  let enumVar: EnumTypeName = EnumTypeName.option1;
+
+
+3.5 Generics 
+
+  // Generic type variable declaration
+  const myArray: MyArray<number> = [1, 2, 3];
+
+  interface MyArray<T> {
+  [key: number]: T;
+
+  // Method map declaration
+  map<U>(func: (val: T, index: number, array: MyArray<T>) => U): MyArray<U>;
+  }
+
+  // Generic type function
+  function func<T>(param: T): T // Return the same type as parameter
+
+  // Generic array type function
+  function getLen<T extends Array<any>>(arr: T): number {
+
+  // Built-in generics
+  Omit<InterfaceName, keyToOmit | otherKeyToOmit>
+  Pick<...> // completely opposite of Omit
+  Partial<InterfaceName> // Make parameters optional
+
+
+3.6 Классы 
+  TS adds public, private and protected to classes
+
+  abstract class ClassName {
+    public abstract abstractField: number;
+
+    public abstract abstractMethos(): number;
+
+    protected someMethod() {...}
+  }
+
+  class ClassName implements InterfaceName { ... }
+
+
+3.7 Infer, typeof, keyof, Mapped Types 
+
+  // Type casting
+  let a = [] as array<number>;
+
+  // One level read only for object
+  type MyReadonly<T> = {
+    readonly [N in keyof T]: T[N];
+  }
+
+  keyof // All object keys
+
+  // Implementation of Pick
+  type MyPick<T, K extends keyof T> = {
+    [N in K]: T[N];
+  }
+
+  type ReadonlyDeep<T> = {
+    readonly [N in keyof T]: T[N] extends object ? ReadonlyDeep<T[N]> : T[N];
+  }
+
+  type RemoveReadonly<T> = T extends ReadonlyDeep<infer E> ? E : T;
+
+  infer // Finds type from generic (works with extends)
+  typeof // Works differently from js in special cases
+
+  // Built-in mapped types
+  type Parameters<T>
+  type ReturnType<T>
+
+
+4.1 Компоненты в React 
+
+  Ways to create component
+  Class ComponentName extends React.Component {
+  Class ComponentName extends React.PureComponent {
+  function ComponentName() { 
+
+  React.memo(Component, arePropsEqual?) // Render component only on change (Use cautiously)
+  
+
+4.2 Состояния в Class Components
+
+// Неправильное изменение состояния (Может привести к ошибке из-за асинхронности)
+this.setState({ count: this.state.count + 1 });
+
+// Необходимо в качестве аргумента использовать функцию
+this.setState((state, props) => ({ count: state.count + 1}));
+
+
+4.3 Состояния в Functional Components
+
+// Хуки можно применять только внутри функциональных компонентов
+// Hook для изменения состояния
+
+Существует два способа работы с состоянием в функциональном компоненте
+Атомарные состояния
+const [item, setItem] = React.useState(initialValue | function);
+const [item2, setItem2] = React.useState(initialValue | function);
+
+Объект состояния
+const [state, setState] = React.useState({ value1, value2, value3 });
+
+
+4.4 Создаем Layout приложения. Часть 1
+
+https://github.com/TaoriYu/generator-react-ts-component-dir - Для быстрой генерации компонентов
+
+
+4.6 Создаем компонент новостной карточки
+
+Компонент должен выполнять одну цель.
+
+
+4.7 Жизненный цикл компонента
+
+Жизненный цикл - типы:
+ - Монтирование
+ - Обновление
+ - Размонтирование (Имеет один метод)
+ - Обработка ошибок
+
+Жизненный цикл - этапы:
+ - Render (не имеет побочных эффектов)
+ - Pre-commit (можно производить чтение DOM)
+ - Commit (может работать с DOM, выполнять побочные эффекты, назначать обновления)
+
+ Методы Mount & unmount
+  + Этап Render
+  - constructor(props)
+  - getDerivedStateFromProps(props, state)
+  - render()
+  + Этап Commit
+    React обновляет DOM и рефы
+  - componentDidMount()
+  - componentWillUnmount()
+
+static getDerivedStateFromProps(props, state) - Не рекомендуется к использованию если есть альтернативы.
+
+render() - может возвращать не только JSX, но также массив, строку, число, null и портал. Это чистый метод.
+
+componentDidMount() - Вызывается сразу после монтирования компонента в DOM дерево. Метод специально создан для side эффектов, подписок, таймеров, счетчиков и т.д.
+
+componentWillUnmount() - Вызывается перед демонтированием компонента.
+
+Методы обновления
+  + Этап render
+  - getDerivedStateFromProps(props, state)
+  - shouldComponentUpdate()
+  - render()
+  + Этап pre-commit
+  - getSnapshotBeforeUpdate(prevProps, prevState)
+    React обновляет DOM и рефы
+  + Этап commit
+  - componentDidUpdate(prevProps, prevState)
+
+shouldComponentUpdate(nextProp, nextState, nextContext): boolean - в обычном компоненте просто возвращает true, а в PureComponent выполняет shallow comparison.
+Рекомендуется не использовать при PureComponent.
+
+getSnapshotBeforeUpdate(prevProps, prevState) - возвращает snapshot в метод componentDidUpdate
+
+componentDidUpdate(prevProps, prevState, snapshot?: any) - Вызывается после того как компонент обновился
+
+
+static getDerivedStateFromErrors(error): state
+
+componentDidCatch(error, errorInfo) - catch для обработки ошибок. Позволяет применять side эффекты при ошибке.
+
+На сайте react.js есть утилиты для рефакторинга на другую версию
+
+
+5.2 Hooks в реакт
+
+React.useEffect(handler, dependencies);
+
+handler может возвращать функцию которая сработает при componentWillUnmount
+dependencies - Массив значений за которыми будет следить компонент
+
+React.useEffect(() => {
+  // Runs when 
+  // componentDidMount
+  // componentWillUpdate
+});
+
+React.useEffect(() => {
+  // Runs when 
+  // componentDidMount
+}, []);
+
+React.useMemo - Оптимизация вычислений
+
+Утилиты для ФП:
+  pickFromSyntheticEvent - 5.1 20:00
+  preventDefault() and stopPropagation() - 5.1 24:00
+  generateRandomIndex - 5.3 4:00
+  assoc - 5.3 7:22
+  assignId - 5.3 11:30
+  GenericList - 5.3 24:39
+  noop
+  compose - 5.5 0:00
+  pipe - 5.5 3:40
+
+
+6.1 Адаптивные и неадаптивные компоненты. Mobile first и desktop first в адаптиве. Разница в подходах
+
+  Способы управления видимостью
+  - Лучшее решение css media queries
+  - Управление видимостью через пропы
+  - Управление видимостью через HOC (High Order Component)
+    <Visible screen={EScreens.desktop}>
+      <SimpleButton color={green}> First Button </SimpleButton>
+    </ Visible>
+
+6.4 Пишем тест на реакт компонент Enzyme vs Snapshots
+
+npm i -D enzyme enzyme-adapter-react-17 @types/enzyme
+
+Необходимо создать файл jest.config.js - timestamp 1:50
+Необходимо создать папку __tests__ внутри директории компонента или корневой директории
+
+Для файлов CSS должен быть написан глобальный mock - timestamp 8:00
+npm i -D identity-obj-proxy
+
+// Для snapshot тестирования
+npm i -D enzyme-to-json
+
+Добавление JSDom - timestamp 19:40
+
+6.5 Вспомогательные компоненты
+
+  npm i classnames
+
+
+7.4 Авторизация пользователя
+
+  Создание переменных настройки в webpack - timestamp 7:00
+
+7.5 Как структурировать API Запросы
+
+  Любая библиотека для работы с API реализована под капотом либо с помощью fetch, либо XMLHttpRequest
+
+  Библиотеки для API запросов:
+    - Axios
+    - Superagent
+    - Ky
+    - Fetch
+
+
+8.1 Забираем из API данные пользователя
+
+  npm i axios - http клиент который позволяет отправлять запросы как с сервера так и из браузера
+  
+  Настройка server.js - timestamp 1:00
+
+8.2 Отображаем данные пользователя в компоненте через prop
+
+  prop drill не так часто является лучшей практикой
+  Prop drill нужно уметь правильно определять
+
+8.3 Используем для работы с данными React Context
+
+  export const contextName = React.createContext(initialValue) - Контекст лучше хранить в отдельном файле
+
+  const { Provider, Consumer } = tokenContext;
+
+  Для использования контекста нужно использовать компонент provider
+
+  <Provider value={/* Context value */}>
+    <Component />
+  </ Provider>
+
+  <Consumer>
+    {(contextValue) => {
+      <ConsumerComponent prop={contextValue} />
+    }}
+  </ Consumer>
+
+  Также можно вместо Consumer'а использовать useContext
+
+  contextData = useContext(contextName)
+
+  Если нужно создать глобальную переменную, её нужно положить в context. (Особенно при SSR)
+
+9.1 Верстаем карточку поста, используя ReactPortal
+
+  ReactDOM.createPortal(child, container)
+  Порталы позволяют переносить компонент не разрывая родительских связей
+
+9.2 Ref и useRef React hook. Реализуем механизм click outside для скрытия модального окна
+
+  this.myRef = React.createRef() - для классовых компонентов
+  const myRef = useRef(initialValue) - для функциональных компонентов
+
+  Реф необходимо привязать к элементу
+
+  myRef.current - ссылка на ноду
+
+  Рекомендуется избегать использования рефов, и по возможности использовать state и props вместо них
+
+  Оправданное использование рефов:
+  - Управление фокусом
+  - Выделение текста
+  - Воспроизведение медиа
+  - Императивный вызов анимаций
+  - Интеграция со сторонними DOM библиотеками
+
+9.3 Controlled и uncontrolled компоненты на примере поля комментария, разница подходов
+
+  Значения по умолчанию для неуправляемых компонентов
+  <input type="text" defaultValue="Значение по умолчанию" />
+  <input type="checkbox" defaultChecked />
+
+  Исключение:
+  <input type="file" />
+  Всегда неуправляемый
+
+  Рекомендуется предпочитать управляемые компоненты
+
+
+10.1 Введение в Redux
+
+  Три принципа Redux
+    - Единственный источник правды
+    - Состояния только для чтения
+    - Мутации написаны как чистые функции
+
+  Экшены - {
+    type: 'UPDATE_COMMENT',
+    text: 'some text',
+  }
+
+  Генераторы экшенов - function updateComment(text) {
+    return {
+      type: 'UPDATE_COMMENT',
+      text,
+    };
+  }
+
+  Редюсеры - Чистые функции, которые изменяют состояние
+  (previuosState, action) => newState
+
+  Store - 
+  import { createStore } from 'redux';
+  import rootReducer from './reducers';
+  let store = createStore(rootReducer);
+
+  методы стора: 
+    getState
+    dispatch
+
+  Примеры: 
+  const state = store.getState();
+
+  store.dispatch(updateComment('Lightning bolt!'));
+
+  Поток данных: 
+    - Вызывается store.dispatch(action)
+    - Redux-store вызывает функцию-редюсер
+    - Главный редюсер может комбинировать результат работы нескольких редюсеров
+    - Redux-store сохраняет полное дерево состояния
+
+
+10.2 Устанавливаем Redux, подключаем его к приложению
+
+  npm install react-redux
+  npm i redux
+
+  redux-devtools-extension - Для отладки
+
+  import { Provider } from 'react-redux';
+
+  <Provider store={store}> 
+
+
+10.3 Action + reducer
+
+  const initialState = { commentText: 'Lightning bolt' };
+
+  const rootReducer: Reducer<StateType, ActionType> = (state = initialState, action) => {
+    switch (action.type) {
+      case 'UPDATE_COMMENT':
+        return {
+          ...state,
+          commentText: action.text
+        };
+      default: 
+        return state;
+    }
+  }
+
+  const store = createStore(rootReducer);
+
+  Во внутреннем компоненте:
+  const store = useStore<StateType, ??>();
+  const value = store.getState().commentText; или const value = useSelector<StateType, ValueType>(state => state.commentText);
+  const dispatch = useDispatch();
+
+  dispatch({ type: 'UPDATE_COMMENT', text: someValue});
+  
+
+10.4 Presentation Components/Container Components
+
+  Логику компонентов можно разделить на презентационные компоненты и компоненты-контейнеры
+
+  Другие названия:
+    глупые и умные
+    худые и толстые
+    чистые и имеющие состояние
+
+  Компонент-контейнер имеет логику состояния, он общается с презентационным компонентом через пропы и колбеки
+
+  Презентационные компоненты:
+    - Как это выглядит (разметка, стили)
+    - Не знает о Redux
+    - Читает данные из props
+    - Вызывает callback'и из props
+    - Page, Sidebar, Story, UserInfo, List
+
+  Компоненты контейнеры:
+    - Как это работает (получение данных, обновление состояния)
+    - Знает о Redux
+    - Подписан на Redux state
+    - Отправляют (dispatch) Redux действие (actions)
+    - UserPage, FollowerSidebar, StoryContainer, FollowedUserList
+
+  Преимущества разделения:
+    - Разделение ответственности
+    - Повторное использование
+    - UI Kit
+
+
+11.1 Работа с асинхронными запросами в Redux
+
+  Виды экшенов:
+    - Запрос начался
+    - Запрос завершился успешно
+    - Запрос завершился с ошибкой
+
+    { type: FETCH_POSTS }
+
+    {
+      type: FETCH_POSTS,
+      status: 'error',
+      error: 'Error message',
+    }
+
+    {
+      type: FETCH_POSTS,
+      status: 'success',
+      response: { ... },
+    }
+
+    { type: FETCH_POSTS_REQUEST }
+
+    {
+      type: FETCH_POSTS_FAILURE,
+      error: 'Error message',
+    }
+
+    {
+      type: FETCH_POSTS_SUCCESS,
+      response: { ... },
+    }
+
+  const logger: Middleware (store) => (next) => (action) => {
+    console.log(`Dispatching action: ${action}`);
+    const returnValue = next({ ...action, newValue: 'some value' });
+    console.log(`action after next: ${returnValue}`);
+  };
+
+  const store = createStore(rootReducer, composeWithDevTools(
+    applyMiddleware(logger)
+  ));
+
+
+11.3 Подключаем thunk к приложению свой первый асинхронный action
+
+  npm i redux-thunk (@2.3.0)
+
+  export const timeout = (): ThunkAction<void, RootState, unknown, Action<string>> => (dispatch, _getState) => {
+    dispatch({ type: 'START' });
+    setTimeout(() => {
+      dispatch({ type: 'FINISH' });
+    }, 1500);
+  };
+
+  store.dispatch(timeout());
+
+
+11.4 Работа с асинхронным состоянием
+
+  Рекомендуется избегать неоднозначностей в состоянии
+
+
+11.5 Пишем простой loader
+
+  src/store/me/actions.ts:
+
+  export const ME_REQUEST = 'ME_REQUEST';
+  export type MeRequestAction {
+    type: typeof ME_REQUEST;
+  }
+  export const meRequest: ActionCreator<MeRequestAction> = () => ({
+    type: ME_REQUEST,
+  });
+
+
+12.1 Экскурс в формы. Проблематика форм React
+
+  Рекомендуется использовать управляемые компоненты при работе с формами.
+
+  При написании кода для форм в реакте без библиотек получается много boilerplat'а. Для решения этой проблемы существуют альтернативные способы:
+  - Неуправляемые компоненты (Если не нужен дополнительный функционал)
+  - Использование библиотек.
+
+12.2 Состояние полей. Различные подходы
+
+  Основные состояния для input'ов:
+  [value, setValue] = useState('');
+  [touched, setTouched] = useState(false);
+  [errorValue, setErrorValue] = useState('');
+
+12.3 Пара слов о библиотеках, и почему они могут стать обузой
+
+  Рекомендуется начинать писать формы без библиотеки и начать использовать если сложность компонентов достигнет какого то предела. 
+  Библиотеки увеличивают размер бандла и плохо сказываются на производительности.
+
+
+12.4 Сохраняем состояние формы и валидируем поля. Выводим ошибки в правильный момент времени
+
+  Не рекомендуется ставить disabled кнопкам формы в самом начале.
+
+
+12.5 Смотрим на форму с точки зрения доступности, нативных элементов и возможности работать с ней табуляцией
+
+  - Убедитесь, что формы логичны и просты в использовании.
+    Например форма должна иметь логичную последовательность.
+  - Для каждого input'а должен быть label
+  Input'у нужно добавить autocomplete. Autocomplete может иметь тип: autocomplete="name"
+
+  Чекбоксы можно группировать с помощью <fieldset> и <legend>.
+
+  placeholder не заменяет label.
+  аттрибут inputmode - выбрать клавиатуру для телефона
+
+
+13.1 Работа запросами в API
+
+  Виды запросов:
+  CRUD - Create Read Update Delete
+    - Создание элемента
+    - Загрузка одного элемента
+    - Загрузка коллекции
+    - Редактирование элемента
+    - Удаление элемента
+
+13.3 Виды бесконечных скроллов и пагинаций
+
+  Подходы разделения данных на части:
+    - Пагинация
+      Плюсы:
+        - Позволяет ссылаться на страницы
+        - Пользователь знает где находится
+        - Не грузит много данных
+      Минусы:
+        - Кажется, что контент загружается медленно и долго
+        - Считается старомодным
+        - Требуется клик/тап
+
+    - Бесконечный скролл
+      Плюсы:
+        - Может вызвать привыкание
+        - Имеет быстрое время загрузки
+        - Это "модно"
+        - Длительные периоды взаимодействия с пользователем
+        - Прокрутка - это ожидаемое поведение
+      Минусы:
+        - Пользователь почти никогда не увидит футер
+        - Сложная навигация
+        - Сложная аналитика
+        - Могут быть проблемы с производительностью
+    - Кнопка "Загрузить ещё"
+      Плюсы:
+        - Все плюсы бесконечного скролла
+        - Можно добраться до футера
+
+  Выбирайте UX-паттерн правильно.
+
+  Как работать с API
+
+  Size, number
+  GET /articles?page[size]=30&page[number]=2
+  Проблема этого паттерна в том что список сдвигается при добавлении элемента, что приводит к проблемам.
+
+  Offset, limit
+  GET /articles?page[offset]=30&page[limit]=30
+
+  Курсор
+  GET /articles?page[after]=12411243
+
+
+13.4 Делаем подгрузку ленты постов
+
+  Intersection Observer API позволяет веб-приложениям асинхронно следить за изменением пересечения элемента с его родителем или областью видимости документа viewport.
+
+  const observer = new IntersectionObserver(callback, options);
+
+  callback - (entries) => void
+
+  observer.observe(ref.current);
+
+  observer.unobserve(ref.current); - отписка (необходима при смене ref.current)
+
+
+13.5 Эффективный рендеринг больших списков
+
+  Библиотека react-window - для частичного рендера виртуального списка
+
+
+14.1 Роутинг в SPA, роутинг в React
+
+  Как писать эффективные URI
+  Пишите так чтобы URI
+    - Легко запомнить
+    - Имеют смысл
+    - Покрывают много состояний
+    - Структурированные
+
+  Виды роутинга:
+    - Традиционный роутинг
+    - SPA/Клиентский роутинг
+
+  Преимущества клиентского роутинга:
+    - Быстрый переход
+    - Нет полной перезагрузки
+    - Умные обновления
+
+  Как можно сделать переход
+    - Кликнуть по ссылке
+    - Перейти назад и вперед по истории
+    - Прямой переход к странице
+
+  Роутинг это киллер фича веба.
+
+
+14.2 Подключаем React Router
+  
+  npm i react-router-dom
+
+
+14.4 Что ещё умеет роутинг
+
+  <BrowserRouter> - использует HTML5 History API (для современных браузеров)
+  <HashRouter> - использует window.location.hash (для поддержки старых браузеров)
+  Также есть MemoryRouter, StaticRouter
+
+  функции
+  
+  generatePath(pattern, params);
+
+  В react-router-dom есть два вида ссылок
+
+  <Link> и 
+  <NavLink> - такие ссылки есть возможность стилизовать 
+
+  Хуки:
+  useHistory
+  useLocation
+  useParams
+
+  Есть возможность Code splitting'а - оптимизации загрузки кода тогда когда он нужен.
+
+
+15.1 Что такое деплой
+
+  Этапы создания ПО:
+    - Анализ (Requirements)
+    - Проектирование (Design)
+    - Прогаммирование (Engineering)
+    - Конструирование (Construction)
+    - Тестирование (Testing)
+    - Отладка (Debugging)
+    - Развертывание (Deployment)
+    - Сопровождение (Maintenance)
+
+  Действия при развертывании:
+    - Выпуск (Release)
+    - Установка и активация (Installation and activation)
+    - Деактивация (Deactivation)
+    - Удаление (Uninstallation)
+    - Обновление (Update)
+    - Встройка (Built-in update)
+    - Отслеживание версий (Version tracking)
+
+  Выпуск этапа развертывания на React:
+    - Загрузка исходного кода (git clone ...)
+    - Установка переменных окружения для сборки (NODE_ENV=production SECRET=...)
+    - Установка зависимостей (npm clean-install)
+    - Сборка (npm run build)
+    - Выгрузка собранной версии приложения в репозиторий
+
+  Установка и активация:
+    - Загрузка собранной версии приложения на сервер
+    - Установка переменных окружения для запуска
+    - Установка зависимостей (npm clean-install)
+    - Запуск (npm start)
+
+
+15.2 SaaS vs PaaS vs IaaS
+
+  Чек лист деплоя
+    - Подготовить приложение к продакшену
+    - Выбрать продакшен окружение
+    - Подготовить инфраструктуру
+    - Настроить процесс деплоя
+
+  Готовим Express к продакшену
+    - Включаем gzip
+    - Избегаем синхронных функций
+    - Обслуживаем статику отдельно
+    - Настраиваем вывод логов
+    - Правильно обрабатываем ошибки
+
+  Готовим React.js к продакшену (Webpack)
+    - Собираем с mode: 'production'
+    - Используем terser-wepback-plugin для сжатия
+
+
+  Продакшн окружение:
+    - Минимальная конфигурация (1CPU/1 GB RAM/25 GB SSD)
+    - Linux (Ubuntu)
+    - Node.js LTS
+
+
+  Виды инфраструктуры:
+    - On-site (Собственный сервер)
+    - IaaS (Infrastructure as a Service) (Digital Ocean or Yandex Cloud Services)
+    - Paas (Platform as a Service) (Recommended) (Heroku)
+    - Saas (Software as a Service)
+
+
+  Процесс деплоя в Heroku
+    $ heroku login
+    $ heroku git:remote -a reddit-react-skillbox
+    $ git add
+    $ git commit -am "Make it better"
+    $ git push heroku master
+
+
+15.3 Деплой приложения на Heroku
+
+  Для работы приложения в Heroku должны существовать скрипты start и build
+
+  Для того чтобы Heroku использовала определенную Node и npm нужно указать engines в package.json
+  "engines": { 
+    "node": "14.x"
+  },
+
+  Получение номера порта из переменных окружения
+  const PORT = process.env.PORT || 3000;
+
+  Для успешной сборки приложения в Heroku нужно перенести большинство devDependencies в dependencies.
+
+
+16.1 Общий обзор и сравнение
+
+  Недостатки Redux
+    - Много бойлерплейта
+    - Вызывает много обновлений
+    - Он сложный
+
+    Обзоры библиотек для глобального состояния
+
+    React-redux
+      - Самая популярная
+      - Просто устроен
+
+    Mobx-react
+      - Большая. Около 20 КБ (minified and zipped)
+      - Построен на принципах ООП, использует декораторы.
+      - Много хранилищ 
+      - Очень гибкий
+
+    Effector-react
+      - Нет декораторам и proxy
+      - Много хранилищ
+      - Необычное и лаконичное API
+
+    Easy-Peasy
+      - Zero configuration
+      - Построена на хуках и React Context
+      - Отлично работает с Redux Dev Tools
+      - Можно использовать с react-redux
+
+    Storeon
+      - Маленькая. 180 байт (minified and gzipped)
+      - Нет зависимостей.
+      - Построена на хуках и React Context
+      - Автор: Андрей Ситник
+
+
+16.2 MobX
+
+  npm i mobx mobx-react-lite(или mobx-react)
+
+
+16.3 Effector
+
+  npm i effector effector-react
+
+
+Create-react-app
+
+  Steps to create react-app:
+    npx create-react-app app-name --template typescript
+    npm install --save husky lint-staged prettier
+
+    Set up prettier to work with eslint:
+      npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+      Add this values in eslint config:
+        {
+          "extends": ["prettier"],
+          "plugins": ["prettier"],
+          "rules": {
+            "prettier/prettier": ["error"]
+          },
+        }
+      Copy .prettierrc.js file
+
+    Set up husky as told in "Setting Up Your Editor" article on the website.
+
+    Follow steps on the official guide

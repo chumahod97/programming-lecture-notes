@@ -1,0 +1,272 @@
+Symfony Time Estimates
+
+18 Modules
+69 Lessons
+
+PHP-фреймворк Symfony
+Start: 24.12.23
+Estimate: 1 Month and 7 Days
+End: 11.02.24
+Actual time: 1 Month and 18 Days
+
+1. Введение в Symfony
+Start: 24.12.23 11:30
+Estimate: 3:30 - 5:30 Hours
+End: 24.12.23 16:00
+Report Time before: 0
+Actual time: 3:10 Hours (20 Minutes under the limit)
+
+1.12 Практическая работа
+Start: 24.12.23 16:00
+Estimate: 3 - 9 Hours
+End: 24.12.23 20:00
+Report Time before: 0
+Actual time: 2:45 Hours (15 Minutes Under the limit)
+
+2. Основы Symfony 
+Start: 24.12.23 20:00
+Estimate: 4 - 6 Hours
+End: 26.12.23 19:50
+Report Time before: 3:10 Hours
+Actual time: 3:40 Hours (20 Minutes under the limit)
+
+2.10 Практическая работа 
+Start: 26.12.23 19:50
+Estimate: 3 - 9 Hours
+End: 28.12.23 14:40
+Report Time before: 3:30 Hours
+Actual time: 4:30 Hours
+
+3. Шаблонизатор Twig 
+Start: 28.12.23 14:45
+Estimate: 1 - 1:30 Hours
+End: 28.12.23 18:00
+Report Time before: 0
+Actual time: 1 Hour
+
+3.4 Практическая работа 
+Start: 28.12.23 18:00
+Estimate: 2 - 6 Hours
+End: 30.12.23 10:40
+Report Time before: 1:15 Hours
+Actual time: 5:40 Hours
+
+4. Библиотека работы с базой данных Doctrine Orm 
+Start: 30.12.23 10:40
+Estimate: 2:20 - 3:30 Hours
+End: 30.12.23 15:40
+Report Time before: 0
+Actual time: 2:50 Hours
+
+4.5 Практическая работа 
+Start: 30.12.23 15:40
+Estimate: 3 - 8 Hours
+End: 09.01.24 16:40
+Report Time before: 20 Minutes
+Actual time: 9:20 Hours (1:20 Hours over the limit)
+
+5. Фикстуры и расширения Doctrine 
+Start: 09.01.24 16:40
+Estimate: 1 - 1:30 Hours
+End: 10.01.24 00:00
+Report Time before: 0
+Actual time: 1:10 Hours
+
+5.3 Практическая работа 
+Start: 10.01.24 00:00
+Estimate: 1 - 3 Hours
+End: 10.01.24 15:10
+Report Time before: 0
+Actual time: 1:40 Hours
+
+6. Связи в Doctrine. Часть 1 — Один ко многим 
+Start: 10.01.24 15:10
+Estimate: 1:40 - 2:30 Hours
+End: 10.01.24 20:40
+Report Time before: 0
+Actual time: 2 Hours
+
+6.4 Практическая работа 
+Start: 10.01.24 20:40
+Estimate: 2 - 6 Hours
+End: 11.01.24 19:20
+Report Time before: 1:40 Minutes
+Actual time: 6 Hours
+
+7. Связи в Doctrine. Часть 2 
+Start: 11.01.24 19:20
+Estimate: 1 - 1:30 Hours
+End: 11.01.24 20:40
+Report Time before: 0
+Actual time: 1:15 Hours
+
+7.4 Практическая работа
+Start: 11.01.24 20:40
+Estimate: 3 - 7 Hours
+End: 13.01.24 16:00
+Report Time before: 4 Hours
+Actual time: 5:30 Hours
+
+8. Система аутентификации 
+Start: 13.01.24 16:10
+Estimate: 1:30 - 2:15
+End: 13.01.24 19:40
+Report Time before: 0
+Actual time: 1:10 Hours (20 Minutes under the limit)
+
+8.5 Практическая работа
+Start: 13.01.24 19:40
+Estimate: 2 - 6 Hours
+End: 14.01.24 13:40
+Report Time before: 1:50 Hours
+Actual time: 2:10 Hours
+
+9. Роли и уровни доступов и безопасность 
+Start: 14.01.24 13:40
+Estimate: 1 - 2 Hours
+End: 14.01.24 16:40
+Report Time before: 0
+Actual time: 1 Hour
+
+9.4 Практическая работа
+Start: 14.01.24 16:45
+Estimate: 3 - 9 Hours
+End: 14.01.24 19:10 
+Report Time before: 50 Minutes
+Actual time: 2:40 Hours (20 minutes under the limit)
+
+10. Доступы по API 
+Start: 14.01.24 19:10
+Estimate: 0:50 - 1:20 Hours
+End: 14.01.24 23:40
+Report Time before: 1 Hour
+Actual time: 1 Hour
+
+10.3 Практическая работа
+Start: 14.01.24 23:40
+Estimate: 2 - 6 Hours
+End: 24.01.24 16:00
+Report Time before: 4 Hours
+Actual time: 6:42 Hours (40 Minutes over the limit)
+
+11. Регистрация и классы Voter
+Start: 24.01.24 16:00
+Estimate: 1 - 1:30 Hours
+End: 24.01.24 23:00
+Report Time before: 0
+Actual time: 50 Minutes (10 Minutes under the limit)
+
+11.3 Практическая работа 
+Start: 24.01.24 23:00
+Estimate: 2 - 6 Hours
+End: 25.01.24 19:40
+Report Time before: 1:15 Hours
+Actual time: 3:30 Hours
+
+12. Знакомство с компонентом Форм
+Start: 25.01.24 19:40
+Estimate: 1:20 - 2:15 Hours
+End: 25.01.24 21:10
+Report Time before: 0
+Actual time: 1:20 Hours
+
+12.4 Практическая работа 
+Start: 25.01.24 21:10
+Estimate: 3 - 9 Hours
+End: 26.01.24 23:15
+Report Time before: 2:30
+Actual time: 5 Hours
+
+13. Валидация вывод и обработка формы 
+Start: 26.01.24 23:15
+Estimate: 1:10 - 2:15 Hours
+End: 27.01.24 15:30
+Report Time before: 0
+Actual time: 1:40 Hours
+
+13.4 Практическая работа 
+Start: 27.01.24 15:40
+Estimate: 2:30 - 8 Hours
+End: 27.01.24 23:30
+Report Time before: 0
+Actual time: 5:30 Hours
+
+14. Расширение полей и кастомная валидация 
+Start: 27.01.24 23:30
+Estimate: 1 - 1:30 Hours
+End: 28.01.24 14:50
+Report Time before: 1 Hour
+Actual time: 1 Hour
+
+14.5 Практическая работа 
+Start: 28.01.24 15:00
+Estimate: 2 - 6 Hours
+End: 28.01.24 22:20
+Report Time before: 0
+Actual time: 4:20 Hours
+
+15. Загрузка файлов в Symfony
+Start: 28.01.24 22:20
+Estimate: 1:30 - 2:15 Hours
+End: 29.01.24 15:00
+Report Time before: 30 Minutes
+Actual time: 2:20 Hours (5 Minutes over the limit)
+
+15.4 Практическая работа 
+Start: 29.01.24 15:00
+Estimate: 3 - 9 Hours
+End:  30.01.24 22:00
+Report Time before: 0
+Actual time: 7 Hours
+
+16. Сервис отправки электронных писем
+Start: 30.01.24 22:00
+Estimate: 2 - 3 Hours
+End: 31.01.24 15:00
+Report Time before: 0
+Actual time: 3:00
+
+16. Практическая работа
+Start: 31.01.24 15:00
+Estimate: 3 - 9 Hours
+End: 08.02.24 00:30
+Report Time before: 0
+Actual time: 10:30 Hours
+
+17. Система Событий 
+Start: 08.02.24 00:30
+Estimate: 2 - 3 Hours
+End: 09.02.24 22:43
+Report Time before: 0
+Actual time: 1:40 Hours (20 Minutes under the limit)
+
+17. Практическая работа
+Start: 09.02.24 22:50
+Estimate: 2 - 6 Hours
+End: 10.02.24 15:30
+Report Time before: 0
+Actual time: 1:30 (30 Minutes under the limit)
+
+18. Создание переиспользуемых бандлов для Symfony
+Start: 10.02.24 15:30
+Estimate: 2 - 3 Hours
+End: 10.02.24 20:00
+Report Time before: 0
+Actual time: 2:50 Hours
+
+18. Практическая работа
+Start: 10.02.24 20:00
+Estimate: 3 - 9 Hours
+End: 11.02.24 15:10
+Report Time before: 40 Minutes
+Actual time: 3:50 Hours
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

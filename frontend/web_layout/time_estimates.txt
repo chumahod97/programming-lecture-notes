@@ -1,0 +1,137 @@
+Web-Layout Time Estimates
+
+Advanced: 
+9 Modules
+68 Lessons
+
+Веб-вёрстка «Продвинутый уровень»
+Start: 26.02.23 11:17
+Estimate: 5 Weeks
+Break: 19.03.23
+Time before break: 3 Weeks
+Start from break: 31.03.23
+End: 12.05.23
+Report Time before: 
+Actual time: 2 Months and 1 Week
+
+1. Верстка HTML-писем 
+Start: 26.02.23 11:20
+Estimate: 3:20 Hours
+End: 
+Report Time before: 41 Minutes
+Actual time: 
+
+1.6 Практическая работа
+Start: 26.02.23 18:34
+Estimate: 13 Hours
+End: 28.02.23 13:49
+Report Time before: 3:53 Hours
+Actual time: 9:17 Hours
+
+2. SVG 
+Start: 28.02.23 13:51
+Estimate: 2 Hours
+End: 28.02.23 15:33
+Report Time before: 2:22
+Actual time: 1:10 Hours
+
+2.7 Практическая работа 
+Start: 28.02.23 15:33
+Estimate: 6 Hours
+End: 28.02.23 19:46
+Report Time before: 3:33
+Actual time: 3:00 Hours
+
+3. Анимация на JS 
+Start: 28.02.23 19:47
+Estimate: 2:30 Hours
+End: 01.03.23 13:04
+Report Time before: 6:32 Hours
+Actual time: 3:44 Hours
+
+3.7 Практическая работа 
+Start: 01.03.23 13:05
+Estimate: 5 Hours
+End: 01.03.23 21:18
+Report Time before: 2:01 Hours
+Actual time: 2:37 Hours
+
+4. Оптимизация и процесс загрузки 
+Start: 01.03.23 21:19
+Estimate: 3:50 Hours
+End: 02.03.23 14:26
+Report Time before: 4:38 Hours
+Actual time: 3:30 Hours
+
+4.14 Практическая работа 
+Start: 02.03.23 14:27
+Estimate: 7 Hours
+End: 03.03.23 13:29
+Report Time before: 2:33 Hours
+Actual time: 4:48 Hours
+
+5. Отрисовка сайта 
+Start: 03.03.23 13:32 
+Estimate: 1:30 Hours
+End: 04.03.23 18:01
+Report Time before: 2:15 Hours
+Actual time: 2:30 Hours
+
+5.10 Практическая работа 
+Start: 04.03.23 18:02
+Estimate: 2 Hours
+End: 04.03.23 19:42
+Report Time before: 2:22 Hours
+Actual time: 43 Minutes
+
+6. Сборщики
+Start: 04.03.23 19:44
+Estimate: 4 Hours
+End: 05.03.23 13:13
+Report Time before: 3:05 Hours
+Actual time: 3:27 Hours
+
+6.8 Практическая работа
+Start: 05.03.23 13:14
+Estimate: 7 Hours
+End: 05.03.23 19:31
+Report Time before: 1:34 Hours
+Actual time: 4:36 Hours
+
+7. Препроцессоры и Постпроцессоры 
+Start: 05.03.23 19:46
+Estimate: 3 Hours
+End: 06.03.23 16:45
+Report Time before: 1:35 Hours
+Actual time: 2:38 Hours
+
+8.1 Что такое Grid. Базовые свойства контейнера. Явная сетка
+Start: 06.03.23 16:48
+Estimate: 1:30 Hours
+End: 07.03.23 15:12
+Report Time before: 2:38 Hours
+Actual time: 3:08 Hours
+
+8.7 Практическая работа
+Start: 07.03.23 15:13
+Estimate: 22 Hours
+End: 19.03.23 16:30
+Report Time before: 3 Hours
+Actual time: 42:35 Hours
+
+Курсовая работа
+Start: 31.03.23 13:00
+Estimate: 65 Hours
+End: 12.05.23 23:20
+Report Time before: 1:30
+Actual time: 130 Hours
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

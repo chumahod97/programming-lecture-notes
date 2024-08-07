@@ -1,0 +1,1053 @@
+﻿document.body.contentEditable = true - В консоли чтобы редактировать текст прямо в dev tools
+
+Для поддержки медиа-запросов в старых браузерах можно воспользоваться JavaScript-библиотекой css3-mediaqueries.js, доступную по адресу https://code.google.com/archive/p/css3-mediaqueries-js/.
+
+Apple рекомендует делать кнопки и интерактивные элементы не меньше 44px.
+
+https://drive.google.com/uc?id= // For hosting images
+
+caniuse.com - Проверка возможности использования
+
+https://validator.w3.org/ - Валидатор
+
+html5book.ru - справочник html5
+https://copypastecharacter.com/ - спец-символы
+https://webref.ru/html - справочник html
+
+https://codeguide.maxgraph.ru/ - код-стайл
+https://fonts.google.com/ - шрифты
+
+
+fontsquirrel.com/tools/webfont-generator - Конвертер шрифтов
+
+https://webref.ru/css - справочник css
+https://html5book.ru/css-css3/ - справочник css 2
+
+https://github.com/yoksel/common-words - Слова, часто используемые в CSS-классах
+https://necolas.github.io/normalize.css/8.0.1/normalize.css - normalize CSS
+
+https://colorscheme.ru/html-colors.html - Цвета для веба
+
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator - Генератор теней
+
+https://squoosh.app/ - оптимизация качества изображения
+
+Uhttps://unpkg.com/ - NPKG - is a fast, global content delivery network for everything on npm.
+
+Tags <q> and <cite> - цитаты
+
+<a download> - "download" - boolean property
+<button autofocus> - "autofocus" - autofocus on load
+<button disabled>
+
+breakout button - makes area around button also clickable 
+
+
+ 2.10 Прочие теги
+
+<pre> - сохраняет исходное форматирование
+<sub>, <sup> - над- и под- символы
+<u> - Подчеркнутый текст
+<code> - Пример кода
+<s> - Зачеркнутый текст
+<abbr title="расшифровка"> - аббревиатура
+<del>, <ins> - удалить и вставить
+</wbr>(одиночный) - Word break - перенос слова
+
+
+ 2.11 Валидность HTML-кода
+
+https://validator.w3.org/ - Валидатор
+
+
+ 2.12 Плагины для работы
+
+Плагин HTMLHint для редактора VS Code.
+
+Плагин Emmet уже встроен в VS Code
+
+https://docs.emmet.io/ - Документация
+
+(tr>td*5)*3
+table#id_name.class_name
+ul#nav>li*5>a[href=item-$]
+lorem10 - /* 10 words */
+
+html:5 или ! для HTML5 doctype
+html:xt для XHTML transitional doctype
+html:4s для HTML4 strict doctype
+
+Чтобы добавить Ваш собственный или обновить существующий отрывок, отредактируйте snippets.json.
+Чтобы изменить поведение фильтров и действий Emmet, попытайтесь редактировать preferences.json.
+Чтобы определить, как HTML или XML должны выполняться, отредактируйте syntaxProfiles.json.
+
+
+Плагин EditorConfig
+.editorconfig в папке проекта
+
+
+ 2.13 Кодстайл HTML
+
+https://github.com/yoksel/common-words/ - Слова, часто используемые в CSS-классах
+
+
+ 3.4 Вложенность и вес селектора 
+
+color: red !important; - самый высокий приоритет
+
+
+ 3.5 Единицы измерения CSS
+
+px
+%
+em - зависит от размера шрифта родительского элемента
+rem - зависит от базового размера шрифта на всем сайте (от размера шрифта элемента html)
+pt, pc, cm, in, ex, mm, 
+vw, vh, vmin, vmax
+
+
+ 3.6 Свойство display 
+
+Влияет на строчные и блочные элементы.
+Параметры: inline, block, none, hidden, 
+
+inline-block - Не занимает 100% ширины, но можно сделать отступы
+похож на <img>
+
+
+ 3.7 Размеры, отступы, границы 
+
+margin - соседних элементов не складываются, а схлопываются
+
+Отступы не схлопываются:
+
+    Между плавающим блоком и любым другим блоком;
+    У плавающих элементов и элементов со значением overflow, отличным от visible, со своими дочерними элементами в потоке;
+    У абсолютно позиционированных элементов, даже с их дочерними элементами;
+    У строчно-блочных элементов.
+
+Для предотвращения проблемы схлопывания рекомендуется задавать для всех элементов только верхний или нижний margin.
+
+Если внутри одного блока расположить другой блок и задать ему margin-top, то внутренний блок прижмется к верхнему краю родительского, а у родительского элемента появится отступ сверху, т.е. внутренний блок «выпадет» из родительского блока. Если у родительского элемента также был задан верхний отступ, то выберется наибольшее из значений.
+
+Чтобы избавиться от эффекта выпадения, можно задать родительскому элементу padding-top или добавить border-top: 1px solid transparent.
+
+border-width, border-style, border-color
+
+
+ 3.8 Блочная модель 
+
+Рекомендуется пользоваться как можно чаще box-sizing: border-box
+
+margin может быть отрицательным
+
+
+ 3.9 Display. Практика 
+
+:nth-child(3n+2)
+vertical-align: (top, middle, bottom);
+
+
+ 3.12 Домашняя работа 
+
+/* Robust box sizing */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+} 
+
+
+ 4.3 Позиционирование 
+
+relative влияет на поток, а absolute нет
+fixed - относительно viewport'а свойство position не наследуется
+
+float: (left/ right) - плавающий элемент
+clear: (left/ right/ both) - смещаться относительно плавающего элемента
+
+Для предотвращения отображение фона или границ под плавающими элементами используется правило {overflow: hidden;}.
+
+
+ 4.4 Обтекание, скролл и управление слоями
+
+overflow: (hidden/ auto - скролбар только при оверфлове / scroll - скролбары всегда)
+overflow-x, overflow-y
+
+z-index применяется к позициям relative, absolute, fixed
+для static z-index не работает
+
+
+  4.5 Стилизация. Работа с цветом и текстом 
+
+text-decoration: (none/ underline/ line-through/ overline) - линия текста
+
+text-align: (left/ right/ center/ justify)
+
+text-transform: (none/ uppercase/ lowercase/ capitalize)
+
+line-height, letter-spacing, text-indent, word-spacing
+
+white-space: (normal/ nowrap/ pre)
+
+
+ 4.6 Стилизация. Шрифтовые свойства 
+
+font-size: small, etc.
+
+font-style: oblique - forced italic
+
+font-weight - толщина шрифта (числовые значения зависят от шрифта)
+
+font - общая сокращенная запись
+
+
+ 4.8 Стилизация. Фон, границы и тени 
+
+border: 1px solid black;
+
+border-top-right-radius - закругление одного угла
+
+box-shadow: (inset) 5px 3px (10px) red;
+Требователен к производительности при анимации
+
+text-shadow - для текста
+
+background-position - позиция картинки фона
+background-repeat: (no-repeat/ repeat/ repeat-x/ repeat-y)
+background-size: (cover/ contain/ 10px 10px/ 50% 50%)
+
+background: (цвет) (адрес/url) (повторение) (позиция) (размер)
+
+Рекомендуется устанавливать background-color на случай если изображение не загрузится.
+
+<table style="border-collapse: collapse">
+
+
+ 4.9 Стилизация. Прочие свойства 
+
+outline - бордер без размера
+
+visibility: hidden
+
+list-style: (none/ etc.
+
+cursor: (pointer/ etc. - изменяет курсор
+
+
+ 4.11 Плагины для работы 
+
+CSS Navigation - быстрый переход к селектору стилей
+
+eCSStractor - генерация файла css на основе html
+
+
+ 4.14 Домашняя работа 
+
+https://skillbox.ru/media/base/kak_rabotat_s_fonovymi_kartinkami_v_css/ - Как работать с фоновыми картинками в CSS
+
+
+ 5.2 Форматы изображений 
+
+Векторные - svg
+Растровые - png, jpeg, webp, gif
+
+Необходимо оптимизировать, сжимать изображения на сайте.
+
+https://squoosh.app/ - оптимизация качества изображения
+
+
+ 5.3 Figma. Базовые инструменты 
+
+figma.com
+
+пробел - передвижение макета
+ctr - увеличение макета
+
+
+ 5.7 Figma. Шрифты макета 
+
+Font Fascia - плагин для шрифтов в Figma
+
+everythingfonts.com/font-face - конвертация шрифтов
+
+font-display: swap;
+
+Шрифт в body работает не на всех элементах
+
+woff2, woff - приоритетные форматы шрифтов
+
+
+ 6.3 HTML-семантика 
+
+<header> - Шапка сайта
+
+<nav> - выделение основной навигации на сайте
+
+<main> - Основной контент страницы как правило всё между шапкой и подвалом и без боковой панели
+
+<section> - секция с отделенным контентом
+
+<article> - карточка статьи, независимый набор контента. - Пример использования: виджет погоды, твиты, посты в инстраграм.
+
+Секция формирует часть чего-то ещё, а <article> это что-то само по себе.
+
+<aside> - боковой модуль
+
+<footer> - подвал сайта
+
+<time> - для контента связанного с временем. например дату публикации статьи
+Аттрибут datetime
+
+<address> - контактная информация
+
+https://developer.mozilla.org/ru/docs/Web/HTML/Element - основные элементы
+
+
+ 6.4 Контентные и декоративные изображения
+
+Если изображение можно убрать без ущерба смыслу контента, то это декоративное изображение.
+
+aria-label="presentation" - Поставить изображению роль не-семантического.
+
+
+ 7.2 Введение в Flexbox. Свойства flex-контейнера 
+
+display: flex - делает элемент флекс контейнером
+
+display: inline-flex - флекс элемент, который ведет себя как display: inline-block
+
+flex-direction: row / row-reverse / column / column-reverse
+
+align-items: stretch / center / flex-start / flex-end / baseline - На второстепенной оси
+
+justify-content: flex-start / flex-end / space-between / space-around / space-evenly - На главной оси
+
+flex-wrap: wrap / nowrap / wrap-reverse
+
+flex-flow: row wrap - flex-direction и flex-wrap вместе
+
+align-content: flex-start / flex-end / center / space-between / space-around / stretch - на второстепенной оси
+
+Для отдельного элемента
+
+order: {numeric value}
+
+flex-grow: {numeric value}
+
+flex-shrink: - 
+
+flex-basis: - базовая ширина элемента
+
+flex: - all three above
+
+align-self: flex-start / flex-end / center
+
+
+ 7.4 Переполнение верстки 
+
+Необходимо проверять элементы на малый и большой текст.
+
+/* Невидимый элемент */
+invisible {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  margin: 0;
+  etc.
+}
+
+document.body.contentEditable = true - В консоли чтобы редактировать текст прямо в dev tools
+
+
+ 9.2 Теги для медиа-контента 
+
+Тег video - для вставки видео.
+
+Тег <source src="video.mp4" type="video/mp4"> - источник видео.
+
+
+Аттрибуты тега video
+
+controls - стандартный плеер браузера
+
+poster="poster.png" thumbnail видео
+
+loop - зацикливает видео
+
+preload="none / auto / metadata" - подгрузка видео
+
+autoplay - 
+
+muted - 
+
+
+Тег <audio> - имеет те же атрибуты что и <video>
+
+Тег <iframe> - позволяет встроить страницу другого сайта
+
+
+ 9.3 Продвинутое подключение изображений 
+
+Тег <picture> - продвинутое изображение. Его можно использовать для экранов с разной плотностью пикселей.
+
+<source srcset="image.webp" type="image/webp"> - файл с картинкой
+
+<source srcset="image2x.jpg 2x" type="image/webp"> - Файл с удвоенной плотностью пикселей.
+
+После тегов <source> обязательно должен идти тег <img>.
+
+
+  9.4 Узконаправленные теги 
+
+<canvas> - холст для рисования через javascript
+
+<base target="_blank"> - как открываются ссылки по умолчанию
+
+<details> - Спойлер (аккардион)
+  <summary> Short description </summary>
+  Long description
+</details>
+
+<mark> - Выделение текста (как будто выделили маркером)
+
+<blockquote cite="Your cite"> - сложная цитата.
+
+ 
+ 9.5 Формы. Введение. Поля ввода 
+
+Тег <form>
+
+Аттрибуты:
+
+action - Адрес куда отправится форма. Это может быть как готовый сервис или скрипты на PHP
+
+method - Метод отправки данных (GET или POST)
+
+enctype - способ кодирования данных при отправке
+
+Тег <form> - является оберткой
+
+<button type="submit"> - в форме обладает специальным поведением
+
+Поля формы - специальные теги которые позволяют вводить данные в форму:
+
+<input type> - Поля для ввода данных
+
+Аттрибуты
+
+type="text / number / email / tel / password / date / search / file / hidden"
+
+accept="image/*" - тип данных который принимается
+
+required - обязательное поле
+
+min, max - мин. макс. значение цифры
+
+maxlength - максимальная длина строки
+
+placeholder - Текст до введения данных
+
+
+  9.6 Формы. Селект, чекбоксы и группировка полей 
+
+<input type="radio" name="list_name"> - радио-кнопки
+
+Аттрибуты:
+
+checked
+
+value - значение которое отправится на сервер
+
+
+<label for="field_id"> - Описание поля
+
+Тег <label> - Также делает активную область вокруг input'а
+
+Тег <textarea name="textarea_name" placeholder="Text placeholder"> - поле для многострочной информации с изменяемым размером
+
+Тег <select> - Выпадающий список (Стилизуется с помощью javascript)
+
+<option value="item_value"> - Элемент списка
+
+Аттрибуты:
+
+disabled - Элемент нельзя выбрать
+
+
+Тег <fieldset> - Группировка полей (Набор полей)
+
+Тег <legend> - Описание группы полей
+
+
+ 10.3 Подключение шрифтов 
+
+caniuse.com - Проверка возможности использования
+
+fontsquirrel.com/tools/webfont-generator - Конвертер шрифтов
+
+
+ 10.4 Комбинаторные селекторы 
+
+Можно объединять элементы через запятую
+.class1, 
+.class2 {
+
+С помощью пробела можно выбрать потомков класса
+.parent .child {
+
+.parent > .child { - Только к прямым потомкам
+
+.class1 ~ .sibling-class - Для всех соседей на том же уровне
+
+.class1 + .sibling-class - Для первого соседа
+
+
+ 10.5 Псевдоклассы 
+
+.class:hover { - Для элемента над которым находится курсор
+
+:focus - Элемент находится в фокусе
+
+:active - Кнопка в момент нажатия
+
+:nth-child(An + B), :first-child, :last-child, nth-last-child() - Потомок по счету
+
+Параметр pointer-events: (none) - Как элемент реагирует на взаимодействия
+
+[attr-name="attr-value"] - Выборка по аттрибуту
+
+:checked - Выбранный флаг
+
+:disabled - элемент (пример кнопка) с аттрибутом disabled
+
+
+ 10.6 Псевдоэлементы 
+
+Начинаются с ::
+
+::first-letter - Выбрать первую букву элемента
+
+::first-line - Первая линия
+
+::selection - Стилизовать выделение
+
+::before, ::after - До элемента и после
+
+Аттрибут content: "something"; (content: "";) - поле обязательно!
+
+
+ 10.7 Transition 
+
+Свойство transition
+
+transition-property: color, font-size; - какие свойства будут изменяться
+
+transition-property: all - Не рекомендуется!
+
+transition-duration: 1s; - время изменения
+
+transition-timing-function: (ease / ease-in-out ...
+
+transition-delay: 1s; - Время задержки перед анимацией
+
+transition: color 1000ms linear; - Общая запись
+
+
+ 10.8 Transform 
+
+transform: matrix() - Самое функциональное трансформирование
+
+Параметры matrix: scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()
+
+translate(x, y), translateX, translateY - смещение
+
+scale(x, y), scaleX, scaleY - Растягивание
+
+rotate(180deg) - поворот
+
+skew(x(deg), y(deg)), skewX, skewY - Смещение крайних точек (деформация)
+
+transform-origin: top right (z axis); - точка смещения
+
+
+ 10.9 Кастомные свойства 
+
+:root { } - глобальные переменные
+
+переменная начинается с --
+
+font-size: var(--var-name);
+
+.classname {
+  --var-name: 5px; - локальная переменная внутри класса
+
+Доступ к переменной возможен из Javascript
+
+Доступ к локальной переменной возможен для потомка в родителе которого переменная объявлена
+
+ 
+ 10.10 CSS-функции 
+
+Свойство object-fit: (cover / contain / initial / inherit / ... - Размещение потомка в родительском элементе
+
+currentColor - цвет текста элемента
+
+функция filter: () - визуальные фильтры
+
+filter: blur(2px); - blur эффект
+
+filter: brightness(50%); - яркость
+
+filter: grayscale(100%) - насыщщеность цвета
+
+filter: dropshadow(0 0 30px #000) - усложненная тень
+
+функция calc(100% / 3) - подсчет
+
+
+ 10.11 БЭМ-именование 
+
+https://ru.bem.info/ - Документация по БЭМ
+
+Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.
+
+Блок может иметь вложенную структуру элементов в DOM-дереве:
+
+Элемент — всегда часть блока и не должен использоваться отдельно от него.
+
+Название модификатора характеризует внешний вид, состояние и поведение
+
+Невозможно одновременно использовать два одинаковых модификатора с разными значениями
+
+Модификаторы бывают двух типов булевые и со значением
+
+
+ 11.2 Виды верстки 
+
+Существует 3 вида верстки - статичная, резиновая и адаптивная.
+
+Статичная верстка удобнее для мобильных устройств чем резиновая.
+
+Проверить отображение страницы на мобильных устройствах можно на сервисах Яндекс.Вебмастер и Google Developers.
+
+
+ 11.3 Медиа-запросы. Mobile First 
+
+Адаптивная верстка реализуется с помощью @media.
+
+@media (условие) {
+  блок стилей;
+}
+
+Брейкпойнты точки смены верстки.
+
+Как правило брейкпойнты - 320-360 пикселей для телефона, 
+768 для планшетов в портретной ориентации, 
+1024 для планшетов в горизонтальной ориентации,
+1100-1200 для десктопов и выше
+
+@media (orientation: portrait / landscape) { - для портретной и альбомной ориентации
+
+@media print { - для страницы на печать
+
+Существует два подхода верстки mobile-first и desktop-first
+
+Так как большая часть трафика - это мобильные устройства, для большинства сайтов рекомендуется подход mobile-first.
+
+Медиа-запросы могут быть добавлены следующими способами:
+1) С помощью HTML:
+
+<link rel="stylesheet" media="screen and (color)" href="example.css">
+
+2) С помощью правила @import внутри элемента <style> или внешней таблицы стилей:
+
+@import url(color.css) screen and (color);
+
+3) Непосредственно в коде страницы:
+
+<style>
+  @media (max-width: 600px) {
+    #sidebar {
+      display: none;
+    }
+  }
+</style>
+
+4) Внутри таблицы стилей style.css:
+
+@media (max-width: 600px) {
+  #sidebar {display: none;}
+}
+
+Для поддержки медиа-запросов в старых браузерах можно воспользоваться JavaScript-библиотекой css3-mediaqueries.js, доступную по адресу https://code.google.com/archive/p/css3-mediaqueries-js/.
+
+С помощью логических операторов можно создавать комбинированные медиазапросы.
+
+Операторы: "and" "," "not" "only"
+
+Оператор запятая работает по аналогии с логическим оператором or.
+
+Оператор only используется, чтобы скрыть стили от старых браузеров
+
+
+Эти браузеры ожидают список медиа-типов, разделённых запятыми. И, согласно спецификации, они должны отсекать каждое значение непосредственно перед первым неалфавитно-цифровым символом, который не является дефисом. Таким образом, старый браузер должен интерпретировать предыдущий пример как media="only". Поскольку данного типа медиа-типа не существует, то и таблицы стилей будут игнорироваться.
+
+Тип носителя: all, print, screen, speech
+
+@media (aspect-ratio: 16/9) { - соотношение сторон
+
+Страницы, адаптированные для просмотра на разных типах устройств, должны содержать в разделе <head> метатег viewport.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+ 11.5 Best Practices 
+
+Хорошей практикой является не создавать блоки, которые подходят только для мобильных или десктопных устройств.
+
+Хорошей практикой является помещение медиа запросов в самом низу файла или в отдельном файле.
+
+Apple рекомендует делать кнопки и интерактивные элементы не меньше 44px.
+
+Возможно увеличить область интерактивного элемента с помощью паддинга.
+
+Для мобильных чаще вместо hover'а используется active.
+
+
+ 11.6 Pixel Perfect 
+
+Perfectpixel by welldonecode - расширения для Google chrome
+
+
+ 12.2 Адаптивные изображения 
+
+Тег picture
+
+<picture>
+  <source srcset="http_link" media="condition">
+  <img - (обычное изображение)
+</picture>
+
+
+ 12.4 Формы на нативных устройствах  
+
+<input type="file" id="take-picture" accept="image/*">
+
+<input type="file" accept="image/*" capture> // opens the camera>
+
+<input type="file" accept="video/*" capture> // opens the camera in video mode
+
+<input type="file" accept="audio/*" capture> // opens the voice recorder
+
+
+ 13.3 DOM 
+
+Document Object Model
+
+document.
+  querySelector("CSS selector") - находит первый элемент
+  querySelectorAll("CSS selector) - находит список элементов возвращает NodeList
+  getElementsByTagName("tagname") - возвращает HTMLCollection
+  
+
+window.addEventListener("DOMContentLoaded", function) - событие загрузки DOM страницы
+
+Свойства CSS в DOM пишутся камел кейсом (div.style.backgroundColor)
+
+div.style.backgroundColor = "red" - inline стиль
+
+element.classList.add("class-name")
+element.classList.remove("class-name")
+element.classList.toggle("class-name") // Включить и выключить
+
+list.forEach(function(element))
+
+
+ 13.4 События
+
+element.addEventListener("click", function(event) {
+  event.target - Элемент в котором произошло событие
+})
+
+
+ 13.8 Табы на JS
+
+<tagname data-name="value" - аттрибут который попадает в dataset и может быть получен в js (element.dataset.name)
+
+
+ 14.3 Проверка доступности.
+
+Accessibility Testing Tools for Desktop and Mobile Websites
+
+- WAVE
+- aXe
+- a11yTools
+- tota11y
+- HTML_CodeSniffer
+
+ Wave
+Basic steps of using WAVE are to visit each page you want to test and click the WAVE icon button in the browser extension to see the accessibility violations.
+
+When you don’t see the error icons on the page they may be visually hidden and you need to check for them under the No Styles tab.
+
+ aXe
+
+The most popular way aXe is used is likely via the Chrome and Firefox Extensions that provide a user interface for the accessibility errors output.
+
+ a11yTools
+
+Works on Safari. But no Chrome or Firefox extension.
+
+ tota11y
+
+ HTML_CodeSniffer
+
+
+ 14.6 ARIA
+
+aria - Аттрибуты для обеспечения доступности
+
+aria-label="Описание элемента"
+aria-role - не рекомендуется к использованию при использовании семантичного элемента
+aria-checked="(true / false) - для флажков
+
+Сайт - aria practices на w3c
+
+
+ 15.5 Проверка кроссбраузерности 
+
+browserstack - проверка разных браузеров
+
+
+ 16 - Ссылки на плагины
+
+https://github.com/jshjohnson/Choices - Плагин для кастомного select'а
+
+simplebar - кастомный скроллбар
+
+horprogs/Just-validate - Плагин для валидации
+
+RobinHerbots/Inputmask - плагин для маски input'а
+
+tippy.js - плагин для тултипа
+
+
+ 19.2 Зачем нужна анимация? 
+
+Material Design - Гайдлайн от Google по анимации
+
+
+ 19.3 Анимация по правилам UX 
+
+https://easings.net/ - Примеры функции тайминга
+
+https://www.cssdesignawards.com/ - Примеры лучших работ по CSS
+
+
+ 19.4 Анимация на CSS 
+
+@keyframes name {
+  0% {
+    /* First frame */
+  }
+  100% {
+    /* Last frame */
+  }
+}
+
+.element {
+  animation: name 1s alternate ease-in-out number_of_cycles;
+}
+
+Рекомендуется для анимации использовать transform вместо других свойств. Для улучшения производительности.
+
+animation-name:
+
+animation-direction:
+
+animation-duration:
+
+animation-timing-function:
+
+animation-iteration-count:
+
+animation-delay: 
+
+animation-play-state: paused; - Текущее состояние анимации
+
+animation-fill-mode: (forwards / backwards / both) - ?
+
+
+ 19.5 Анимация на CSS - готовые решения 
+
+animate.style - старая библиотека с анимациями
+
+https://github.com/IanLunn/Hover Hover.CSS - Библиотека для анимации ховеров
+
+1.2 Основные правила вёрстки писем
+
+  - Используйте табличную верстку
+  - Пишите стили инлайново
+  - Указывайте doctype предыдущих версий спецификации
+  - Используйте по максимуму html аттрибуты
+  - Не делайте слишком много вложенностей в письме (из-за ограничений по размеру)
+  - Всегда проверяйте вёрстку валидатором
+  - Пишите полные стили без сокращений
+  - Используйте только "безопасные" шрифты
+  - Максимально используйте пиксели
+  - Для переноса текста используйте <br />
+  - Следите за "темными" версиями почтовиков
+  - Используйте !important при адаптивной верстке
+
+  Не используйте:
+  - colspan и rowspan
+  - background-image
+
+1.3 Основные почтовики для проверки писем
+  
+  litmus.com // Тестирование писем
+  putsmail.com
+
+1.4 Практика 
+
+  https://buttons.cm/ // сервис для создания кнопок в письмах
+  https://drive.google.com/uc?id= // for sharing images
+
+3.3 Анимации на чистом JS. RequestAnimationFrame 
+
+  window.requestAnimationFrame(functionName) // Use instead of setTimeout()
+  window.cancelAnimationFrame(requestId)
+
+4.2 Загрузка сайта и метрики 
+
+При анализе загрузки сайта следует обратить внимание на:
+- TTFB
+
+4.4 Скорость загрузки — шрифты 
+  <link rel="preload" href="font-file.woff" as="font">
+  preload // High priority load
+  prefetch // Low priority load
+
+  - It's recommended to use 'font-display: swap' in @font-face
+
+4.5 Скорость загрузки — изображения 
+  Для улучшения производительности следует использовать разные изображения 
+  для разных разрешений экрана.
+  Формат webp - лучший по весу изображения
+  Для оптимизации загрузки можно использовать lazyload 'tuupola/lazyload'
+    verlok/vanilla-lazyload - is better
+  data-src for <img> data-srcset for <source>. class="lazyload" only needed for <img>
+
+  https://squoosh.app/ - Минификация изображения очень сильно уменьшает его вес
+
+4.7 Минификация — шрифты 
+  https://www.fontsquirrel.com/ - Для оптимизации шрифтов
+
+4.10 Ускорение доставки — CDN 
+  UNPKG - is a fast, global content delivery network for everything on npm.
+
+4.12 Ускорение доставки — http 2.0 
+  При использовании HTTP 1 следует уменьшать количество файлов, так как количество одновременных подключений ограниченно
+  HTTP 2 при медленном интернете может дольше загружать страницу при большом количестве соединений
+
+4.13 Lighthouse 
+  Lighthouse - инструмент для метрики производительности
+
+  Steps for optimization:
+  1. Defer js, avoid css imports (everything stops to download import) and find unused js and css
+  2. Link and preload fonts in html, use font-display swap, use local src first in font-face
+  3. Make images responsive, use webp if possible, use lazyload (data-src for <img> data-srcset for <source>. class="lazyload" only needed for <img>)
+  4. Minify images, fonts css, js and html
+  5. Use CDN for caching
+  6. Set up caching and compression (gzip) on server side
+  7. Use HTTP 2. or bundle everything for HTTP 1.
+
+5.7 Изменение интерфейса и перерисовка 
+  Стадии отрисовки:
+    - Парсинг html/css
+    - Вычисление стилей
+    - Расчет макета (Вычисление геометрии)
+    - Визуализация элементов (Render)
+    - Компоновка
+
+  Изменения затрагивающие ранние стадии отрисовки более тяжелые.
+  К примеру свойство transform не затрагивает первые три стадии и является более производительным.
+
+  При чтении данных элемента может выполняться перерисовка. Поэтому для оптимизации нужно производить чтение и изменение отдельно.
+  
+5.9 Приемы для улучшения производительности 
+  - Делайте анимации в отдельных слоях.
+  - Старайтесь не трогать геометрию
+  - Используйте devtools perfomance
+  - Не стоит анимировать то, чего пользователь не видит
+  - Не злоупотребляйте will change
+
+7.3 Препроцессор Sass. Синтаксис и конструкции
+
+  Функции SASS
+  - darken($color, $amount)
+
+  @mixin name($variable, $second-variable) {
+    // Стили
+  }
+
+8.1 Что такое Grid. Базовые свойства контейнера. Явная сетка
+
+  grid-template-columns: 100px 200px 300px; // 3 колонны
+  fr - unit для грида (fractional unit)
+  grid-template-columns: repeat(3, 1fr)
+
+  grid-template-rows: // Такое же как grid-template-columns
+
+  gap: $row-gap $column-gap;
+
+8.2 Неявная сетка
+
+  grid-auto-columns: $width;
+  grid-auto-rows: $height;
+  grid-auto-flow: row | column | dense;
+
+8.3 Адаптивный грид
+
+  grid-template-columns: repeat(auto-fill, minmax($min, $max));
+
+8.4 Управление элементами сетки
+
+  grid-column-start: $start;
+  grid-column-end: $end;
+  // or
+  grid-column: $start / $end;
+  // or
+  grid-column: $start / span ($end - $start);
+
+  grid-row-start: $start;
+  grid-row-end: $end;
+  // or
+  grid-row: $start / $end;
+  // or
+  grid-row: $start / span ($end - $start);
+  
+8.5 Прочие особенности CSS Grid
+
+  В гридах работает:
+  - order:
+  - justify-content:
+  - align-items: 
+  - justify-self:
+  - align-self:
+
+8.6 Именованные области сетки
+
+  grid-area: $name;
+
+  grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+
+____________________________________________________________________

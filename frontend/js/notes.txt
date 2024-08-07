@@ -1,0 +1,310 @@
+JS Notes
+
+----__ Header __----
+
+----__ End of header __---
+
+2.1 Переменные
+  let exponential = 666.666e3;
+  let binary = 0b001;
+  let octal = 0o777;
+  let hex = 0x9d;
+
+2.5 Функции работы с числами
+
+  ln = Math.log(x);
+
+3.2 Строка 
+
+  Вставка переменных (только с обратными кавычками)
+  let string = `${variable} some text ${another_variable}`;
+
+4.4 Циклы for of, for in 
+
+  Для массивов
+  for(let item of array)
+
+  Вместо элемента используется индекс (индекс является не int, а строкой)
+  for(let key in array)
+
+6.2 Синтаксис объекта 
+  Удаление свойства
+  delete obj.property;
+
+6.4 Операции над объектами 
+  Добавление свойств объекта в другой
+  let mainObject = {
+    ...mixedObject, 
+    ...otherMixedObject, 
+  }
+
+  let mainObject = Object.assign(
+    { 
+      name: "This is mixed object", 
+    }, 
+    mixedObject, otherMixedObject, 
+  )
+
+  Получение всех имен свойств и свойств объекта
+  Object.keys(obj);
+  Object.values(obj);
+  Object.entries(obj);
+
+6.6 typeof и система типов 
+  Деструктуризация
+  Объект: 
+  let {prop : varName = default, ...rest} = object
+  Массив: 
+  let [item1 = default, item2, ...rest] = array
+
+  BigInt создаётся путём добавления n в конец целочисленного литерала — 10n — или вызовом функции BigInt().
+
+  JavaScript has 8 types: undefined, null, boolean, number, bigint, string, symbol, and object.
+
+7.3 Свойства и методы DOM элемента 
+
+  let div = document.createElement("div");
+
+  .textContent = "Some text";
+  .append(div);
+  .prepend(someOtherDiv);
+
+  // Add before or after element
+  .before(element);
+  .after(element);
+  
+  .innerHTML = "<div> some html </div>";
+
+  .replaceWith(someOtherElement);
+
+  .remove();
+  .removeAttribute("some attribute")
+
+7.5 Глобальный объект window 
+
+  IIFE (Immediately Invoked Function Expression)
+  (function () {
+    // …
+  })();
+
+  Use cases: 
+  1) Avoid global namespace pollution
+  2) Execute an async function
+  3) The module pattern
+  4) For loop with var before ES6
+
+  Сохранение данных
+  localStorage
+  .getItem(itemName);
+  .setItem(itemName, value);
+  .removeItem(itemName);
+  .clear();
+
+9.4 Замыкания, стрелочные функции 
+
+  Замыкание – это функция, которая запоминает свои внешние переменные и может получить к ним доступ. В некоторых языках это невозможно, или функция должна быть написана специальным образом, чтобы получилось замыкание. Но, как было описано выше, в JavaScript, все функции изначально являются замыканиями (есть только одно исключение, про которое будет рассказано в Синтаксис "new Function").
+
+10.1 Преобразование типов
+  Number("\n\t 123 \n\t ") - Преобразование в численный тип
+  if(someNaNVariable == NaN) - Не работает
+  if(isNaN(someNaNVariable)) - работает
+
+10.3 Обработка строк 
+  string.
+  .startsWith(str);
+  .endsWith(str);
+
+10.4 Обработка массивов 
+  .array
+  .splice(start, count, addVar, anotherAddVar)
+  .reverse()
+  .sort(compareFunc)
+  .every(compareFunc) - вернет true если каждый элемент подходит
+  .some(compareFunc)
+  .reduce(
+  .filter(
+
+11: Async
+
+  new Promise((resolve, reject) => {
+    // ... some code
+    if(// Everything is right) resolve();
+    if(// Something is wrong) reject();
+  }
+
+  let promise = somePromiseCreator();
+  
+  promise.then((value) => {
+    functionAfterResolve
+  });
+
+  promise.catch((value) => {
+    functionAfterReject
+  });
+
+  Promise.all([// array of promises])
+    .then(() => code);
+    .catch(() => code);
+
+  async function someFunc() - returns promise, can you use await inside to wait for promise resolve
+
+1.3 Контекст выполнения, this в обработчиках 
+
+  // Call function with parameter to be this
+  functionName.call(thisObject, ...args)
+  // Same as call but lets you put arguments as array
+  functionName.apply(thisObjects, argsArray)
+  // Return function with this context
+  functionName.bind(thisObject)
+
+  // !This three functions can't be used with arrow functions!
+
+2.2 Введение в модули 
+
+  export entityName;
+  import { entityName } from 'path/to/file';
+
+  // Импортируемый файл указывать необязательно
+  // Using modules in html (works only with server)
+  <script type="module" src="path/to/file.js"></script>
+
+  export default entityName;
+  import defaultEntityName from 'path/to/file.js'
+
+4.3 Ошибки и асинхронность 
+  
+  // Process errors 
+  try { //code }
+  catch(error) { // code }
+  finally { // Always executes }
+
+  // In promises
+  promise
+    .then(() => // Some code)
+    .then(() => // More code)
+    .catch(error => // Error processing on any stage can return promise)
+    .then(() => // Processes promise from catch
+    .finally(() => // Always executes)
+
+4.4 Создание ошибок: throw, reject 
+
+  new Error('message')
+
+  // Можно создать ошибки разных типов
+  new TypeError('message')
+
+  // Выкинуть ошибку внутри promis'а
+  reject(new Error('message'));
+
+5.3 Члены класса 
+  
+  Члены класса:
+  - Свойства
+  - Методы
+  - Геттеры и сеттеры
+
+5.4 Наследование 
+  class Child extends Parent { // Code }
+  super() // Parent properties constructor
+  super.prop // Parent property
+
+5.5 static и instanceof 
+
+  static commonProperty // Общее свойство класса
+  static staticMethod()
+
+  ClassName.staticProp // Access a static property
+
+  if(object instanceof ClassName) // Check if object is instance of the class or the parent class
+
+6.4 Полезные функции и свойства 
+
+  Object.defineProperty(object, propName, {
+    value: 'value', 
+    get() {}, 
+    set() {}, 
+    enumerable: false, 
+    writeable: false, 
+    configurable: false, 
+  }
+
+7.5 Команды npm, типы зависимостей 
+
+  npm i package_name@<version>
+  npm i redom@2 // Install package 2.x.x
+  npm i redom@2.7 // 2.7.x
+  npm i package_name@latest
+
+  npm i dev_package --save-dev(-D)
+
+  npm un(install) package_name
+  npm update
+  npm ls
+  npm outdated // Show outdated packages
+
+  npm root -g // Determine the global installation directory for npm packages.
+
+  // Вот простая команда, которая помогает уменьшить размер папки node_modules и упростить её структуру:
+  npm dedup
+
+9.2 Статический анализ 
+
+  - Eslint 
+  npm i -D eslint
+  npx eslint --init
+
+  // Alternative way
+  npm init @eslint/config
+
+  // In package.json scripts
+  "lint": "eslint <directory name>"
+
+  - Disable eslint
+  /* eslint-disable no-undef */ - Whole file
+  // eslint-disable-next-line no-undef - One line
+
+  - Editor config
+  // Create file .editorconfig
+
+  - Prettier (On eslint)
+  npm i -D prettier eslint-plugin-prettier eslint-config-prettier
+  // Add "prettier" to plugins and extends in .eslintrc.js
+  // "prettier" should be the last of extends array
+  // Add "prettier/prettier": "error" to rules
+  
+  // Create prettierrc.js
+
+9.3 Unit-тесты 
+
+  // Jest should be configured with babel
+
+  npm i -D jest babel-jest @babel/core @babel/preset-env
+
+  // jest functions 
+  test(message, testFunction)
+  expect(testedFunction()) // Returns object
+  expect.toBe(value);
+
+  - jsdom
+  // Add to jest.config.js
+  testEnvironment: 'jsdom',
+  npm install --save-dev jest-environment-jsdom
+
+10.4 Регулярные выражения 
+
+  \s - Пробельный символ
+  \S - Не пробельный символ
+  \d - Цифра
+  \D - Не цифра
+  [^abcd] - Все символы кроме [abcd]
+
+  /regex/gimsuy // JS RegExp flags
+  \b // Beginning or end of the word
+
+  *? +? ?? // Lazy search
+
+10.5 Альтернативы модулям 
+
+  // CommonJS
+  exports.name = 
+  require('filename').name;

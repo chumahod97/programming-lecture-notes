@@ -1,0 +1,83 @@
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics
+https://www.w3.org/WAI/standards-guidelines/aria/
+
+
+There are three main features defined in the spec:
+
+Roles — These define what an element is or does. 
+Properties — These define properties of elements, which can be used to give them extra meaning or semantics.
+States — Special properties that define the current conditions of elements, such as aria-disabled="true", which specifies to a screenreader that a form input is currently disabled.
+
+WAI-ARIA doesn't affect webpage structure, the DOM, etc., although the attributes can be useful for selecting elements by CSS.
+
+We talked about some of the problems that prompted WAI-ARIA to be created earlier on, but essentially, there are four main areas that WAI-ARIA is useful in:
+
+- Signposts/Landmarks
+- Dynamic content updates
+- Enhancing keyboard accessibility
+- Accessibility of non-semantic controls
+
+Signposts/Landmarks
+
+WAI-ARIA adds the role attribute to browsers, which allows you to add extra semantic value to elements on your site wherever they are needed.
+
+
+
+Dynamic content updates
+
+
+WAI-ARIA fortunately provides a useful mechanism to provide these alerts — the aria-live property. Applying this to an element causes screenreaders to read out the content that is updated. How urgently the content is read out depends on the attribute value:
+
+- off: The default. Updates should not be announced.
+- polite: Updates should be announced only if the user is idle.
+- assertive: Updates should be announced to the user as soon as possible.
+
+There is an additional consideration here — only the bit of text that updates is read out. It might be nice if we always read out the heading too, so the user can remember what is being read out. To do this, we can add the aria-atomic property to the section. Update your <section> tag again, like so:
+
+
+Enhancing keyboard accessibility
+
+In terms of making non-focusable code focusable, WAI-ARIA extends the tabindex attribute with some new values:
+
+
+Accessibility of non-semantic controls
+
+
+ 14.3 Проверка доступности.
+
+Accessibility Testing Tools for Desktop and Mobile Websites
+
+- WAVE
+- aXe
+- a11yTools
+- tota11y
+- HTML_CodeSniffer
+
+ Wave
+Basic steps of using WAVE are to visit each page you want to test and click the WAVE icon button in the browser extension to see the accessibility violations.
+
+When you don’t see the error icons on the page they may be visually hidden and you need to check for them under the No Styles tab.
+
+ aXe
+
+The most popular way aXe is used is likely via the Chrome and Firefox Extensions that provide a user interface for the accessibility errors output.
+
+ a11yTools
+
+Works on Safari. But no Chrome or Firefox extension.
+
+ tota11y
+
+ HTML_CodeSniffer
+
+
+ 14.6 ARIA
+
+aria - Аттрибуты для обеспечения доступности
+
+aria-label="Описание элемента"
+aria-role - не рекомендуется к использованию при использовании семантичного элемента
+aria-checked="(true / false) - для флажков
+
+Сайт - aria practices на w3c
+

@@ -1,0 +1,48 @@
+SQL Time Estimates
+
+5 Modules
+46 Lessons
+
+Язык запросов SQL
+Start: 26.10.23
+Estimate: 7 Days
+End: 4.11.23
+Actual time: 9 Days
+
+2. Введение в реляционные базы данных 
+Start: 26.10.23 15:50
+Estimate: 2 Hours
+End: 28.10.23 22:10
+Report Time before: 0
+Actual time: 2:52 Hours (52 Minutes over the limit)
+
+3. Основные запросы по работе с данными
+Start: 28.10.23 22:10
+Estimate: 3:40 Hours
+End: 29.10.23 23:45
+Report Time before: 2:52 Hours
+Actual time: 10 Hours (6:20 Hours over the limit)
+
+4. Функции и выражения в SQL-запросах
+Start: 29.10.23 23:50
+Estimate: 6 Hours
+End: 3.11.23 00:00
+Report Time before: 8 Hours
+Actual time: 14:21 (8:20 Hours over the limit)
+
+5. Проектирование и оптимизация реляционных баз данных
+Start: 3.11.23 00:00
+Estimate: 4 Hours
+End: 4.11.23 15:00
+Report Time before: 0
+Actual time: 6:11 (2:11 Hours over the limit)
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

@@ -1,0 +1,152 @@
+TypeScript и инструменты разработчика Time Estimates
+
+9 Modules
+52 Lessons
+
+TypeScript и инструменты разработчика
+Start: 24.02.24
+Estimate: 25 Days
+End: 13.03.24
+Actual time: 18 Days
+
+1. Введение 
+Start: 24.02.24 13:40
+Estimate: 1:00 - 1:40 Hours
+End: 24.02.24 15:40
+Report Time before: 0
+Actual time: 50 Minutes (10 minutes under the limit)
+
+1.7 Практическая работа
+Start: 24.02.24 15:40
+Estimate: 1 - 3 Hours
+End: 24.02.24 17:10
+Report Time before: 1:20 Hours
+Actual time: 1:40 Hours
+
+2. Node.js и npm 
+Start: 24.02.24 17:15
+Estimate: 1:20 - 2:30
+End: 24.02.24 19:40
+Report Time before: 50 Minutes
+Actual time: 1:10 Hours (10 minutes under the limit)
+
+2.8 Практическая работа
+Start: 24.02.24 19:40
+Estimate: 1 - 3 Hours
+End: 24.02.24 20:20
+Report Time before: 3 Hours
+Actual time: 40 Minutes (20 minutes under the limit)
+
+3. Сборка
+Start: 24.02.24 20:30
+Estimate: 0:30 - 1:30 Hours
+End: 24.02.24 21:15 
+Report Time before: 2 Hours
+Actual time: 50 Minutes
+
+4. Компиляция и примитивные типы
+Start: 24.02.24 21:20
+Estimate: 0:40 - 2:00 Hours
+End: 25.02.24 0:00
+Report Time before: 2:50 Hours
+Actual time: 1:20 Hours
+
+4.9 Практическая работа 
+Start: 25.02.24 0:10
+Estimate: 1:30 - 4:00 Hours
+End: 25.02.24 12:20
+Report Time before: 0
+Actual time: 1:30 Hours
+
+2.8 Практическая работа (Continued)
+Start: 25.02.24 12:30
+Estimate: 1 - 3 Hours
+End: 25.02.24 14:40
+Report Time before: 1:30 Hours
+Actual time: 1:30
+
+5. Применение типов 
+Start: 25.02.24 14:50
+Estimate: 0:50 - 2:30 Hours
+End: 25.02.24 16:20
+Report Time before: 0
+Actual time: 1:30 Hours
+
+5.8 Практическая работа
+Start: 25.02.24 16:20
+Estimate: 1 - 3 Hours
+End: 25.02.24 20:20
+Report Time before: 3 Hours
+Actual time: 3:10 (10 minutes over the limit)
+
+6. Типизация ООП 
+Start: 25.02.24 20:20
+Estimate: 0:40 - 2:00 Hours
+End: 25.02.24 22:40
+Report Time before: 1:30 Hours
+Actual time: 1:10 Hours
+
+6.9 Практическая работа
+Start: 25.02.24 22:40
+Estimate: 1:30 - 4:30 Hours
+End: 26.02.24 14:20
+Report Time before: 6:05 Hours
+Actual time: 4:30 Hours
+
+7. Дженерики 
+Start: 26.02.24 14:20
+Estimate: 0:20 - 1:00 Hours
+End: 26.02.24 15:00
+Report Time before: 0
+Actual time: 40 Minutes
+
+7.6 Практическая работа (Except for task2)
+Start: 26.02.24 15:00
+Estimate: 1:30 - 4:30 Hours
+End: 27.02.24 12:30
+Report Time before: 3:10 Hours
+Actual time: 4:30 Hours
+
+8. Утилитарные типы 
+Start: 27.02.24 12:50
+Estimate: 0:20 - 1:00 Hours
+End: 27.02.24 15:10
+Report Time before: 0
+Actual time: 50 Minutes
+
+8.6 Практическая работа
+Start: 27.02.24 15:10
+Estimate: 2 - 6 Hours
+End: 27.02.24 19:10
+Report Time before: 1:50 Hours
+Actual time: 2:30 Hours
+
+Final Work
+Start: 28.02.24
+Estimate: 7 - 14 Days
+End: 13.03.24 23:30
+Actual time: 14 Days (80 Hours)
+
+9. Тестирование 
+Start: 15.04.24 13:10
+Estimate: 0:30 - 1:30 Hours
+End: 15.04.24 20:20
+Report Time before: 0
+Actual time: 30 Minutes
+
+9.5 Практическая работа 
+Start: 15.04.24 20:20
+Estimate: 2 - 6 Hours
+End: 
+Report Time before: 2 Hours
+Actual time: 
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+

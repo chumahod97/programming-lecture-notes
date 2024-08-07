@@ -1,0 +1,182 @@
+Node.js Time Estimates
+
+13 Modules
+69 Lessons
+
+Node.js
+Start: 14.03.24
+Estimate: 35 Days
+End: 22.04.24
+Actual time: 39 Days
+
+1. Введение 
+Start: 14.03.24 0:50
+Estimate: 0:30 - 1:30 Hours
+End: 14.03.24 13:50 
+Report Time before: 0
+Actual time: 45 Minutes
+
+2. Подготовка рабочей среды
+Start: 14.03.24 13:50
+Estimate: 1:20 - 4:00 Hours
+End: 14.03.24 16:50
+Report Time before: 45 Minutes
+Actual time: 45 Minutes (35 Minutes under the limit)
+
+2.8 Практическая работа
+Start: 14.03.24 16:50
+Estimate: 0:30 - 1:30 Hours
+End: 14.03.24 17:10
+Report Time before: 0
+Actual time: 20 Minutes (10 Minutes under the limit)
+
+3. Hello, world! 
+Start: 14.03.24 17:10
+Estimate: 0:20 - 1:00 Hours
+End: 14.03.24 17:40
+Report Time before: 1:30 Hours
+Actual time: 30 Minutes
+
+3.5 Практическая работа
+Start: 14.03.24 17:40
+Estimate: 0:30 - 1:30 Hours
+End: 14.03.24 18:00
+Report Time before: 30 Minutes
+Actual time: 25 Minutes (5 Minutes under the limit)
+
+4. Решаем базовые задачи 
+Start: 14.03.24 18:00
+Estimate: 1 - 3 Hours
+End: 14.03.24 22:30
+Report Time before: 2 Hours
+Actual time: 3 Hours
+
+4.6 Практическая работа 
+Start: 14.03.24 22:30
+Estimate: 1:45 - 5:00 Hours
+End: 15.03.24 12:00
+Report Time before: 50 Minutes
+Actual time: 2:50 Hours
+
+5. Асинхронный код 
+Start: 15.03.24 0:30
+Estimate: 0:30 - 1:30 Hours
+End: 17.03.24 19:50
+Report Time before: 0
+Actual time: 2 Hours (30 Minutes over the limit)
+
+5.7 Практическая работа 
+Start: 17.03.24 19:50
+Estimate: 1 - 3 Hours
+End: 17.03.24 23:00
+Report Time before: 0
+Actual time: 2:10 Hours
+
+6. Express.js 
+Start: 17.03.24 23:20
+Estimate: 2 - 6 Hours
+End: 22.03.24 22:40
+Report Time before: 1:30 Hours
+Actual time: 9:15 Hours (3:15 Hours over the limit)
+
+6.7 Практическая работа 
+Start: 22.03.24 22:40
+Estimate: 2 - 6 Hours
+End: 23.03.24 18:50
+Report Time before: 0
+Actual time: 5:30 Hours
+
+7. Базы данных, Реляционные ДБ 
+Start: 23.03.24 18:50
+Estimate: 1:20 - 4:00 Hours
+End: 24.03.24 12:30
+Report Time before: 0
+Actual time: 3:40 Hours
+
+7.8 Практическая работа 
+Start: 24.03.24 12:30
+Estimate: 2 - 6 Hours
+End: 24.03.24 23:40
+Report Time before: 0
+Actual time: 7 Hours (1 Hour over the limit)
+
+Базы данных, Нереляционные БД 
+Start: 24.03.24 23:40
+Estimate: 1 - 3 Hours
+End: 27.03.24 23:00
+Report Time before: 1:20 Hours
+Actual time: 5:30 Hours (2:30 Hours over the limit)
+
+8.8 Практическая работа 
+Start: 27.03.24 23:00
+Estimate: 2 - 6 Hours
+End: 31.03.24 14:20
+Report Time before: 0
+Actual time: 5:50 Hours
+
+9. CLI программы 
+Start: 31.03.24 14:20
+Estimate: 0:40 - 2:00 Hours
+End: 31.03.24 16:40
+Report Time before: 0
+Actual time: 2:20 Hours (20 Minutes over the limit)
+
+9.5 Практическая работа
+Start: 31.03.24 16:40
+Estimate: 3 - 9 Hours
+End: 04.04.24 00:50
+Report Time before: 2:45 Hours
+Actual time: 10:00 Hours (1 Hour Over The Limit)
+
+10. Углубляем теорию + продвинутые понятия 
+Start: 05.04.24 01:00
+Estimate: 1:30 - 4:00 Hours
+End: 07.04.24 12:20
+Report Time before: 0
+Actual time: 7:30 (3:30 Hours over the limit)
+
+11. Real-time & WebSockets 
+Start: 07.04.24 12:20
+Estimate: 2:00 - 6:00
+End: 08.04.24 22:30
+Report Time before: 1:20 Hours
+Actual time: 3:20 Hours
+
+11.6 Практическая работа 
+Start: 08.04.24 22:30
+Estimate: 3 - 9 Hours
+End: 13.04.24 13:30
+Report Time before: 0
+Actual time: 7 Hours
+
+12. Pro tips 
+Start: 13.04.24 13:30
+Estimate: 2 - 8 Hours
+End: 14.04.24 23:40
+Report Time before: 0
+Actual time: 3:40 Hours
+
+12.8 Практическая работа 
+Start: 14.04.24 23:40
+Estimate: 2 - 8 Hours
+End: 15.04.24 13:10
+Report Time before: 0
+Actual time: 2:20 Hours
+
+Diploma
+Start: 16.04.24 00:20
+Estimate: 25 Days
+End: 22.04.24 16:10
+Report Time before: 0
+Actual time: 6 days (way below the estimate)
+Time in Hours: 32:30 Hours
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+
