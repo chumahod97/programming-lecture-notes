@@ -5,9 +5,12 @@
 
 1C Bitrix
 Start: 14.06.24
-Estimate: 12 Days
+Estimate: 23 Days
 Break at: 19.06.24
 Time before break: 5 Days
+Break end: 10.10.24
+Break at: 13.10.24
+Time before break: 8 Days
 Break end: 
 End: 
 Actual time: 
@@ -18,6 +21,41 @@ Estimate: 1:10 - 3:30 Hours
 End: 19.06.24 12:10
 Report Time before: 0
 Actual time: 1 Hour 
+
+Установка Битрикс (практика)
+Start: 10.10.24 23:30
+Estimate: 1 - 4 Hours
+End: 12.10.24 11:30
+Report Time before: 3:20 Hours
+Actual time: 3:30 Hours
+
+2. Источник товаров и контента 
+Start: 12.10.24 11:30
+Estimate: 1:30 - 3:00
+End: 12.10.24 15:30
+Report Time before: 0
+Actual time: 2:40 Hours
+
+Exercises 2
+Start: 12.10.24 15:30
+Estimate: 1 - 3 Hours
+End: 12.10.24 16:35
+Report Time before: 1:30 Hours
+Actual time: 1:10 Hours
+
+3. Интеграция с 1С-Битрикс и другими системами
+Start: 12.10.24 16:35
+Estimate: 2 - 4 Hours
+End: 12.10.24 23:40
+Report Time before: 2:40 Hours
+Actual time: 3 Hours
+
+Exercises 3 (Create infoblock and import data from xml)
+Start: 
+Estimate: 1:30 - 4:30 Hours
+End: 
+Report Time before: 
+Actual time: 
 
 
 Template

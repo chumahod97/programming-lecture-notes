@@ -121,6 +121,8 @@ PHP 8.0 also introduces union types with the following syntax : bool|string whic
 
   sizeof($array) или count($array) - Длина массива
 
+  Хотя эти функции идентичны, рекомендуется использовать count.
+
   explode и implode - Деление строки на массив и наоборот
 
   $matrix = [
@@ -304,7 +306,7 @@ PHP 8.0 also introduces union types with the following syntax : bool|string whic
   packagist.org - Оффициальный репозиторий для composer
 
   Основные комманды composer:
-    install
+    install - Установить все зависимости из composer.json
     update
     remove
     require - Добавление новой зависимости в composer.json
@@ -357,6 +359,7 @@ PHP 8.0 also introduces union types with the following syntax : bool|string whic
     // Выполниться если выброшено ExceptionType
   } finally {}
 
+Класс Throwable - предок всех исключений и ошибок
 
 15.3 Лог-файлы 
   
@@ -524,13 +527,82 @@ $_COOKIE[$cookieName] - Массив cookie
 
 18.3 Ответ скрипта по стандарту REST. Роутинг (Nginx)
 
-  $_SERVER['REQUEST_URI'] - Запрашиваемы URL
+  $_SERVER['REQUEST_URI'] - Запрашиваемый URL
   Для перенаправления всех запросов по URL сайта на единую точку входа (PHP-скрипт) предназначен механизм rewrite.
 
 
 18.4 Делаем запросы из скрипта с помощью cURL
 
   cURL - наиболее гибкая реализация HTTP-клиента для PHP.
+
+### 1. Инициализация cURL
+
+  ```php
+  $ch = curl_init();
+  ```
+
+### 2. Установка параметров
+
+  ```php
+  curl_setopt($ch, CURLOPT_URL, 'http://example.com'); // URL
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Возврат результата в строку
+  ```
+
+### 3. Выполнение запроса
+
+  ```php
+  $response = curl_exec($ch);
+  ```
+
+### 4. Проверка на ошибки
+
+  ```php
+  if (curl_errno($ch)) {
+      echo 'Ошибка: ' . curl_error($ch);
+  }
+  ```
+
+### 5. Закрытие cURL
+
+  ```php
+  curl_close($ch);
+  ```
+
+### Полный пример
+
+  ```php
+  <?php
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, 'http://example.com');
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $response = curl_exec($ch);
+
+  if (curl_errno($ch)) {
+      echo 'Ошибка: ' . curl_error($ch);
+  } else {
+      echo $response; // Обработка ответа
+  }
+
+  curl_close($ch);
+  ?>
+  ```
+
+### Дополнительные опции
+
+  - Для POST-запроса:
+    ```php
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, 'param1=value1&param2=value2');
+    ```
+
+  - Для установки заголовков:
+    ```php
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+    ```
+
+### Заключение
+
+  Используйте cURL для отправки HTTP-запросов, обработки ответов и управления ошибками.
 
 
 20.2 Что такое PDO. Подключение к базе данных
@@ -593,6 +665,7 @@ $_COOKIE[$cookieName] - Массив cookie
 
   $connection->lastInsertId() - получения созданного id
 
+21 Laravel
 
 21.2 Контроллеры и экшены, роутинг
 
