@@ -166,14 +166,14 @@ $specificHeader = $request->header('header-name');
 
 class ExampleModel extends Model
 {
-protected $connection = 'mysql'; // Выбрать движок базы данных.
-protected $primaryKey = 'primary-key-field'; // Задать первичный ключ
-public $incrementing = true;
-protected $table = 'table_name'; // Произвольное название таблицы
-public $timestamps = true;
+    protected $connection = 'mysql'; // Выбрать движок базы данных.
+    protected $primaryKey = 'primary-key-field'; // Задать первичный ключ
+    public $incrementing = true;
+    protected $table = 'table_name'; // Произвольное название таблицы
+    public $timestamps = true;
 
-// Данные модели
-protected $attributes = ['first_name', 'last_name', 'email']; 
+    // Данные модели
+    protected $attributes = ['first_name', 'last_name', 'email']; 
 }
 ```
 
@@ -738,6 +738,24 @@ the event class.
 * `null` - задачи очереди не выполняются
 * `sync` - задачи в очереди выполняются немедленно т.е.
   синхронно.
+
+Другие возможные значения:
+
+* `database` - Uses a database table to store queued jobs. This is useful for
+  simple applications without external queue services.
+* `redis` - Leverages Redis for efficient job processing. This is a great
+  option for high-performance applications with many queued jobs.
+* `beanstalkd` - Uses `Beanstalkd`, a simple and fast work queue. This is
+  suitable for applications that need a lightweight queuing system.
+* `sqs` - Amazon Simple Queue Service (SQS), a fully managed message queuing
+  service offered by AWS. This is ideal for cloud-based applications needing
+  scalable queue solutions.
+* `iron` - `IronMQ`, a cloud-based message queuing service. This is another
+  option for scalable applications.
+* `pusher` - Used for broadcasting events via Pusher, which can be integrated
+  into the queue system for real-time applications.
+* `custom` - You can also define your own custom queue driver if you need a
+  specialized solution.
 
 `php artisan make:job JobName` - создание новой задачи.
 
