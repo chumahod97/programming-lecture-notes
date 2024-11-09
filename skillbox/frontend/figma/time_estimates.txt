@@ -1,0 +1,44 @@
+Figma с нуля до PRO Time Estimates
+
+8 Modules
+38 Lessons
+
+Figma с нуля до PRO
+Start: 16.10.24
+Estimate: 5 Days
+Break at: 17.10.24
+Time before break: 1 Day
+Break end: 
+End: 
+Actual time: 
+
+1. Знакомство с Figma 
+Start: 16.10.24 18:30
+Estimate: 1 - 3 Hours
+End: 16.10.24 19:40
+Report Time before: 0
+Actual time: 1 Hour
+
+2. Создание прототипа по референсу 
+Start: 16.10.24 19:40
+Estimate: 1:30 - 4:30 Hours
+End: 16.10.24 23:30
+Report Time before: 1 Hour
+Actual time: 2:50 Hours
+
+3. Презентация и инфографика
+Start: 16.10.24 23:35
+Estimate: 1:30 - 4:30
+End: 17.10.24 12:00
+Report Time before: 3:40 Hours
+Actual time: 2 Hours
+
+
+Template
+Name
+Start: 
+Estimate: 
+End: 
+Report Time before: 
+Actual time: 
+
