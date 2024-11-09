@@ -114,7 +114,7 @@ https://github.com/TaoriYu/generator-react-ts-component-dir - Для быстр�
 3.3 Работа с объектами и интерфейсами 
 
   // Object declaration
-  let obj: {a: number, b: string, c: someType} = {1, 'str', []}
+  let obj: {a: number, b: string, c: someType} = {a: 1, b: 'str', c: []}
 
   // Interface
   interface MyFirstInterface {
@@ -293,13 +293,12 @@ https://github.com/TaoriYu/generator-react-ts-component-dir - Для быстр�
 
  Методы Mount & unmount
   + Этап Render
-  - constructor(props)
-  - getDerivedStateFromProps(props, state)
-  - render()
-  + Этап Commit
-    React обновляет DOM и рефы
-  - componentDidMount()
-  - componentWillUnmount()
+    - constructor(props)
+    - getDerivedStateFromProps(props, state)
+    - render()
+  + Этап Commit (React обновляет DOM и рефы)
+    - componentDidMount()
+    - componentWillUnmount()
 
 static getDerivedStateFromProps(props, state) - Не рекомендуется к использованию если есть альтернативы.
 
@@ -311,14 +310,14 @@ componentWillUnmount() - Вызывается перед демонтирова�
 
 Методы обновления
   + Этап render
-  - getDerivedStateFromProps(props, state)
-  - shouldComponentUpdate()
-  - render()
+    - getDerivedStateFromProps(props, state)
+    - shouldComponentUpdate()
+    - render()
   + Этап pre-commit
-  - getSnapshotBeforeUpdate(prevProps, prevState)
-    React обновляет DOM и рефы
+    - getSnapshotBeforeUpdate(prevProps, prevState)
+      React обновляет DOM и рефы
   + Этап commit
-  - componentDidUpdate(prevProps, prevState)
+    - componentDidUpdate(prevProps, prevState)
 
 shouldComponentUpdate(nextProp, nextState, nextContext): boolean - в обычном компоненте просто возвращает true, а в PureComponent выполняет shallow comparison.
 Рекомендуется не использовать при PureComponent.
@@ -939,7 +938,7 @@ npm i -D enzyme-to-json
 
     React-redux
       - Самая популярная
-      - Просто устроен
+      - Просто устроена
 
     Mobx-react
       - Большая. Около 20 КБ (minified and zipped)
